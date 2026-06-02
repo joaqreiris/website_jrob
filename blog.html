@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · Joaquín Reiris — Preparación Física, Complejidad & Performance</title>
+    <meta name="description" content="Blog de Joaquín Reiris: reflexiones sobre preparación física de fútbol, el paradigma de la complejidad, Big Data y rendimiento de élite.">
+    <meta name="keywords" content="blog preparación física, complejidad fútbol, Big Data fútbol, performance, Joaquín Reiris">
+    <meta name="author" content="Joaquín Reiris">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://joaquinreiris.com/blog.html">
+
+    <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaquinreiris.com/blog.html">
+    <meta property="og:title" content="Blog · Joaquín Reiris — Preparación Física & Complejidad">
+    <meta property="og:description" content="Reflexiones sobre preparación física de fútbol, complejidad, Big Data y rendimiento de élite.">
+    <meta property="og:image" content="https://joaquinreiris.com/assets/fotos/IMG_4376.JPG">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog · Joaquín Reiris">
+    <meta name="twitter:description" content="Reflexiones sobre preparación física de fútbol, complejidad y performance.">
+    <meta name="twitter:image" content="https://joaquinreiris.com/assets/fotos/IMG_4376.JPG">
+
+    <!-- Google Fonts: Inter Tight + Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS Library (mantener compatibilidad con animaciones existentes) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="redesign.css">
+</head>
+<body data-screen-label="Blog">
+
+    <!-- ============================== NAVBAR ============================== -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html#home" class="logo">
+                <svg viewBox="0 0 100 100" class="jr-logo-svg" aria-hidden="true">
+                    <path d="M45 25 V75 C45 85 35 85 30 80" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M45 25 H60 C75 25 75 50 60 50 H45 M60 50 L75 80" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="name">Joaquín Reiris</span>
+                    <span class="title">Performance · Football</span>
+                </div>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre Mí</a></li>
+            <li><a href="index.html#academic" data-i18n="nav.academic">Formación</a></li>
+            <li><a href="index.html#methods" data-i18n="nav.methods">Metodología</a></li>
+            <li><a href="index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="index.html#cases">Casos</a></li>
+            <li><a href="metodologia.html" data-i18n="nav.leadership">Liderazgo</a></li>
+            <li><a href="blog.html" class="active" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="index.html#contact" class="btn-nav" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="pt">PT</button>
+        </div>
+        <div class="menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- ============================== BLOG ============================== -->
+    <main class="blog-page">
+        <section id="blog" class="blog blog-list-section" data-screen-label="Blog">
+            <div class="container">
+                <!-- (a) Vista listado -->
+                <div class="section-header blog-list-header" data-aos="fade-up">
+                    <span class="section-subtitle" data-i18n="blog.subtitle">Reflexiones</span>
+                    <h2 class="section-title" data-i18n="blog.title">Blog <span>personal</span></h2>
+                </div>
+                <div class="blog-grid">
+                    <!-- Las tarjetas se generan desde posts.json vía blog.js -->
+                </div>
+
+                <!-- (b) Vista artículo -->
+                <article id="post-view" class="post-view" hidden></article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.rights">© 2026 Joaquín Reiris · Performance · Football — Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/971501505371" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.AOS) AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+        const nav = document.querySelector('.navbar');
+        const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      });
+    </script>
+    <!-- main.js: idiomas (i18n) y persistencia de idioma entre páginas -->
+    <script src="main.js"></script>
+    <!-- blog.js: renderiza el listado y la vista de artículo desde posts.json -->
+    <script src="blog.js"></script>
+</body>
+</html>

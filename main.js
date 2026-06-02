@@ -235,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "nav.experience": "Experiencia",
             "nav.leadership": "Metodología",
             "nav.contact": "Contacto",
+            "nav.blog": "Blog",
             "nav.back": "Volver al inicio",
             "hero.title": "GESTIÓN INTEGRAL DEL RENDIMIENTO",
             "hero.tagline": "\"Basada en la complejidad del juego y la evidencia científica.\"",
@@ -269,13 +270,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "methods.lead_desc": "Gestión del talento humano, inteligencia emocional y creación de vínculos sólidos en entornos de alta presión.",
             "exp.subtitle": "Trayectoria global",
             "exp.title": "Experiencia Internacional",
-            "blog.post1_date": "Oct 2023",
-            "blog.post1_title": "Big Data aplicado al fútbol moderno",
-            "blog.post1_p": "Cómo el análisis avanzado de datos está cambiando la forma en que periodizamos el entrenamiento...",
-            "blog.post2_date": "Sep 2023",
-            "blog.post2_title": "Experiencia United FC y Andrea Pirlo",
-            "blog.post2_p": "Lecciones aprendidas trabajando con uno de los grandes del fútbol mundial en EAU...",
-            "blog.read_more": "Leer más",
             "lead.title": "Liderazgo & Inteligencia Emocional",
             "lead.subtitle": "Gestión del Talento Humano",
             "lead.p1": "El alto rendimiento no solo se construye con GPS y cronómetros. Se forja a través de vínculos sólidos, empatía y la gestión de las emociones en entornos de alta presión.",
@@ -375,6 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "case3.result": "Reducción significativa de lesiones musculares sin contacto. Optimización de la reinserción deportiva post-lesión para respetar los <em>tiempos biológicos</em> de recuperación.",
             "blog.subtitle": "Reflexiones",
             "blog.title": "Blog <span>personal</span>",
+            "blog.viewall": "Ver todo el blog",
             "cv.subtitle": "Documentación",
             "cv.title": "Currículum <span>Vitae</span>",
             "form.name": "Nombre",
@@ -393,6 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "nav.experience": "Experience",
             "nav.leadership": "Methodology",
             "nav.contact": "Contact",
+            "nav.blog": "Blog",
             "nav.back": "Back to home",
             "hero.title": "INTEGRAL PERFORMANCE MANAGEMENT",
             "hero.tagline": "\"Based on game complexity and scientific evidence.\"",
@@ -427,13 +423,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "methods.lead_desc": "Human talent management, emotional intelligence, and building solid bonds in high-pressure environments.",
             "exp.subtitle": "Global career",
             "exp.title": "International Experience",
-            "blog.post1_date": "Oct 2023",
-            "blog.post1_title": "Big Data applied to modern football",
-            "blog.post1_p": "How advanced data analysis is changing the way we periodize training...",
-            "blog.post2_date": "Sep 2023",
-            "blog.post2_title": "United FC Experience and Andrea Pirlo",
-            "blog.post2_p": "Lessons learned working with one of the greats of world football in UAE...",
-            "blog.read_more": "Read more",
             "lead.title": "Leadership & Emotional Intelligence",
             "lead.subtitle": "Human Talent Management",
             "lead.p1": "High performance is not only built with GPS and stopwatches. It is forged through solid bonds, empathy, and the management of emotions in high-pressure environments.",
@@ -533,6 +522,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "case3.result": "Significant reduction of non-contact muscle injuries. Optimization of return-to-play after injury, respecting the <em>biological timelines</em> of recovery.",
             "blog.subtitle": "Reflections",
             "blog.title": "Personal <span>Blog</span>",
+            "blog.viewall": "View all posts",
             "cv.subtitle": "Documentation",
             "cv.title": "Curriculum <span>Vitae</span>",
             "form.name": "Name",
@@ -551,6 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "nav.experience": "Experiência",
             "nav.leadership": "Metodologia",
             "nav.contact": "Contato",
+            "nav.blog": "Blog",
             "nav.back": "Voltar ao início",
             "hero.title": "GESTÃO INTEGRAL DO RENDIMENTO",
             "hero.tagline": "\"Baseada na complexidade do jogo e evidência científica.\"",
@@ -585,13 +576,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "methods.lead_desc": "Gestão de talento humano, inteligência emocional e criação de vínculos sólidos em ambientes de alta pressão.",
             "exp.subtitle": "Trajetória global",
             "exp.title": "Experiência Internacional",
-            "blog.post1_date": "Out 2023",
-            "blog.post1_title": "Big Data aplicado ao futebol moderno",
-            "blog.post1_p": "Como a análise avançada de dados está mudando a forma como periodizamos o treinamento...",
-            "blog.post2_date": "Set 2023",
-            "blog.post2_title": "Experiência United FC e Andrea Pirlo",
-            "blog.post2_p": "Lições aprendidas trabalhando com um dos grandes do futebol mundial nos Emirados Árabes...",
-            "blog.read_more": "Ler más",
             "lead.title": "Liderança & Inteligência Emocional",
             "lead.subtitle": "Gestão de Talento Humano",
             "lead.p1": "O alto rendimento não é construído apenas com GPS e cronômetros. Forja-se através de vínculos sólidos, empatia e gestão de emoções em ambientes de alta pressão.",
@@ -691,6 +675,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "case3.result": "Redução significativa de lesões musculares sem contato. Otimização da reinserção esportiva pós-lesão para respeitar os <em>tempos biológicos</em> de recuperação.",
             "blog.subtitle": "Reflexões",
             "blog.title": "Blog <span>pessoal</span>",
+            "blog.viewall": "Ver todo o blog",
             "cv.subtitle": "Documentação",
             "cv.title": "Currículo <span>Vitae</span>",
             "form.name": "Nome",
@@ -743,6 +728,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         document.documentElement.lang = lang;
+
+        // Persistir la elección de idioma entre páginas
+        try { localStorage.setItem("jrob_lang", lang); } catch (e) { /* storage no disponible */ }
     }
 
     document.querySelectorAll(".lang-btn").forEach(btn => {
@@ -752,8 +740,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Auto-detect language from browser
-    (function detectLang() {
+    // Idioma inicial: prioriza el guardado; si no, detecta por navegador
+    (function initLang() {
+        let saved = null;
+        try { saved = localStorage.getItem("jrob_lang"); } catch (e) { /* storage no disponible */ }
+        if (saved === "es" || saved === "en" || saved === "pt") {
+            changeLanguage(saved);
+            return;
+        }
         const nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
         let lang = "en";
         if (nav.startsWith("es")) lang = "es";

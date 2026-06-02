@@ -1,5 +1,105 @@
 [
   {
+    "id": "deportista-hipercomplejo",
+    "image": "assets/fotos/IMG_6012.JPG",
+    "date": { "es": "Jun 2026", "en": "Jun 2026", "pt": "Jun 2026" },
+    "title": {
+      "es": "El deportista hipercomplejo: el rendimiento no se suma, emerge",
+      "en": "The hypercomplex athlete: performance is not summed, it emerges",
+      "pt": "O atleta hipercomplexo: o rendimento não se soma, emerge"
+    },
+    "excerpt": {
+      "es": "Solemos imaginar al jugador como una suma de cualidades: fuerza, resistencia, técnica, cabeza. Pero el rendimiento no aparece sumando piezas, sino de la interacción entre ellas. Entrenar a una persona no es lo mismo que entrenar a un conjunto de partes.",
+      "en": "We tend to imagine the player as a sum of qualities: strength, endurance, technique, mindset. But performance doesn't appear by adding up parts; it emerges from the interaction between them. Training a person is not the same as training a set of parts.",
+      "pt": "Costumamos imaginar o jogador como uma soma de qualidades: força, resistência, técnica, cabeça. Mas o rendimento não aparece somando peças, e sim da interação entre elas. Treinar uma pessoa não é o mesmo que treinar um conjunto de partes."
+    },
+    "body": {
+      "es": [
+        "En el artículo anterior planteábamos que el fútbol es un sistema complejo y no una máquina que se optimiza por piezas. Conviene detenerse en una de esas piezas que más nos cuesta mirar de forma integrada: el propio jugador. Porque si el juego es complejo, quien lo habita también lo es, y posiblemente en un grado todavía mayor.",
+        "La costumbre nos lleva a describir al deportista como un inventario de cualidades. Tiene tanto de fuerza, tanto de resistencia, cierto nivel técnico, buena o mala cabeza. Es una forma útil de hablar, pero engañosa, porque sugiere que esas cualidades existen por separado y que el rendimiento se obtiene sumándolas. En la realidad del partido no hay nada que funcione aislado: un control bajo presión es a la vez un acto físico, técnico, perceptivo, emocional y de relación con los compañeros y el rival, todo al mismo tiempo y en una fracción de segundo.",
+        "Seirul·lo propone entender a la persona que practica deporte como una estructura hipercompleja, integrada por varias subestructuras que interactúan de forma permanente: la condicional, la coordinativa, la cognitiva, la emotivo-volitiva, la creativo-expresiva y la socio-afectiva. No son compartimentos estancos ni un orden de prioridades; son dimensiones de una misma persona que se activan juntas en cada acción. Cuando un jugador resuelve una jugada, no usa una estructura y luego otra: las pone en juego todas a la vez.",
+        "La idea clave es que el rendimiento no es la suma de esas estructuras, sino lo que emerge de su interacción. Emergencia es un término preciso, no decorativo: describe propiedades que aparecen en el sistema completo y que no están contenidas en ninguna de sus partes por separado. Igual que la temperatura de un gas no reside en ninguna molécula individual, la capacidad de un jugador para resolver una situación no reside en su fuerza ni en su técnica aisladas, sino en cómo ambas, junto al resto, se coordinan en ese instante concreto.",
+        "Esto cambia por completo el sentido de muchas evaluaciones. Que un jugador mejore en una prueba aislada —más kilos en sentadilla, mejor tiempo en un sprint lineal— no garantiza que rinda mejor donde importa, porque ese test mide una pieza fuera del sistema en el que normalmente opera. El dato sigue siendo información valiosa, pero deja de ser el objetivo: el objetivo es la interacción, y la interacción solo se observa en contextos que se parecen al juego.",
+        "La ciencia del último par de décadas ofrece un marco para pensar todo esto. Trabajos como los de Balagué, Pol, Torrents y otros investigadores describen el rendimiento deportivo en términos de sinergias y de restricciones anidadas que actúan a distintas escalas de tiempo, vinculadas entre sí por una causalidad circular: cada elemento condiciona a los demás y a la vez es condicionado por ellos. No hay una causa única ni una cadena lineal de efectos; hay una red que se reorganiza de forma continua. Esa es, en el fondo, la diferencia entre sumar y sinergizar.",
+        "Para el trabajo diario, asumir esta mirada tiene una consecuencia muy concreta: el preparador físico deja de pensar en términos de cualidades que rellenar y empieza a pensar en interacciones que provocar. La pregunta ya no es solo cuánta fuerza tiene este jugador, sino cómo se relaciona esa fuerza con su coordinación, con su capacidad de decidir y con su estado emocional cuando el partido aprieta. El estímulo que diseñamos debería poner en relación varias estructuras a la vez, porque así es como se expresan en competición.",
+        "Conviene evitar dos extremos. Reducir al deportista a su estructura condicional es quedarse corto, porque ignora todo lo que sostiene a esa fuerza en el juego real. Pero abrumarse ante tanta interacción y caer en el todo vale tampoco ayuda. Pensar de forma sistémica no consiste en controlarlo todo, sino en reconocer qué cosas se influyen entre sí y en aceptar que el orden no se impone desde fuera: se favorece desde el diseño de las situaciones.",
+        "En las próximas entradas iremos bajando esta idea a terreno: cómo se traduce en el entrenamiento de fuerza, en la modulación de las tensiones a través de la fascia y en la organización de la semana. Pero el punto de partida es este cambio de mirada. Mientras sigamos viendo al jugador como una suma de cualidades, seguiremos entrenando piezas. Cuando lo vemos como un sistema que se reorganiza, empezamos a entrenar al jugador.",
+        "Referencias y lecturas recomendadas:",
+        "Seirul·lo Vargas, F. (2017). El entrenamiento en los deportes de equipo. Barcelona: Mastercede.",
+        "Pol, R., Balagué, N., Ric, A., Torrents, C., Kiely, J. & Hristovski, R. (2020). Training or Synergizing? Complex Systems Principles Change the Understanding of Sport Processes. Sports Medicine - Open, 6, 28.",
+        "Balagué, N., Pol, R., Torrents, C., Ric, A. & Hristovski, R. (2019). On the Relatedness and Nestedness of Constraints. Sports Medicine - Open, 5, 6.",
+        "Balagué, N., Torrents, C., Hristovski, R., Davids, K. & Araújo, D. (2013). Overview of complex systems in sport. Journal of Systems Science and Complexity, 26(1), 4–13."
+      ],
+      "en": [
+        "In the previous article we argued that football is a complex system and not a machine to be optimized part by part. It's worth pausing on one of those parts that we find hardest to look at in an integrated way: the player himself. Because if the game is complex, whoever inhabits it is complex too, and possibly to an even greater degree.",
+        "Habit leads us to describe the athlete as an inventory of qualities. So much strength, so much endurance, a certain technical level, a good or bad head. It's a useful way of speaking, but a misleading one, because it suggests that those qualities exist separately and that performance is obtained by adding them up. In the reality of a match, nothing works in isolation: a touch under pressure is at once a physical, technical, perceptual and emotional act, and one of relating to teammates and opponents, all at the same time and in a fraction of a second.",
+        "Seirul·lo proposes understanding the person who practices sport as a hypercomplex structure, made up of several sub-structures that interact permanently: the conditional, the coordinative, the cognitive, the emotional-volitional, the creative-expressive and the socio-affective. They are not watertight compartments nor an order of priorities; they are dimensions of one and the same person that activate together in every action. When a player resolves a play, he does not use one structure and then another: he brings them all into play at once.",
+        "The key idea is that performance is not the sum of those structures, but what emerges from their interaction. Emergence is a precise term, not a decorative one: it describes properties that appear in the whole system and are not contained in any of its parts separately. Just as the temperature of a gas does not reside in any individual molecule, a player's ability to resolve a situation does not reside in his strength or his technique in isolation, but in how both, together with the rest, coordinate in that specific instant.",
+        "This completely changes the meaning of many assessments. That a player improves in an isolated test —more kilos in the squat, a better time in a linear sprint— does not guarantee that he performs better where it matters, because that test measures a part outside the system in which it normally operates. The data is still valuable information, but it stops being the goal: the goal is the interaction, and the interaction can only be observed in contexts that resemble the game.",
+        "The science of the last couple of decades offers a framework for thinking about all this. Works such as those by Balagué, Pol, Torrents and other researchers describe sporting performance in terms of synergies and of nested constraints that act at different timescales, linked to one another by circular causality: each element conditions the others and is at the same time conditioned by them. There is no single cause nor a linear chain of effects; there is a network that continuously reorganizes itself. That, ultimately, is the difference between summing and synergizing.",
+        "For day-to-day work, adopting this view has a very concrete consequence: the fitness coach stops thinking in terms of qualities to be filled and starts thinking in terms of interactions to be prompted. The question is no longer only how much strength this player has, but how that strength relates to his coordination, to his decision-making capacity and to his emotional state when the match gets tight. The stimulus we design should bring several structures into relation at once, because that is how they are expressed in competition.",
+        "It's worth avoiding two extremes. Reducing the athlete to his conditional structure falls short, because it ignores everything that sustains that strength in the real game. But becoming overwhelmed by so much interaction and falling into 'anything goes' doesn't help either. Thinking systemically is not about controlling everything, but about recognizing which things influence one another and accepting that order is not imposed from outside: it is fostered through the design of situations.",
+        "In upcoming articles we will bring this idea down to the ground: how it translates into strength training, into the modulation of tensions through the fascia and into the organization of the week. But the starting point is this shift in perspective. As long as we keep seeing the player as a sum of qualities, we will keep training parts. When we see him as a system that reorganizes itself, we begin to train the player.",
+        "References and recommended reading:",
+        "Seirul·lo Vargas, F. (2017). El entrenamiento en los deportes de equipo. Barcelona: Mastercede.",
+        "Pol, R., Balagué, N., Ric, A., Torrents, C., Kiely, J. & Hristovski, R. (2020). Training or Synergizing? Complex Systems Principles Change the Understanding of Sport Processes. Sports Medicine - Open, 6, 28.",
+        "Balagué, N., Pol, R., Torrents, C., Ric, A. & Hristovski, R. (2019). On the Relatedness and Nestedness of Constraints. Sports Medicine - Open, 5, 6.",
+        "Balagué, N., Torrents, C., Hristovski, R., Davids, K. & Araújo, D. (2013). Overview of complex systems in sport. Journal of Systems Science and Complexity, 26(1), 4–13."
+      ],
+      "pt": [
+        "No artigo anterior afirmávamos que o futebol é um sistema complexo e não uma máquina que se otimiza por peças. Convém deter-se em uma dessas peças que mais nos custa olhar de forma integrada: o próprio jogador. Porque se o jogo é complexo, quem o habita também o é, e possivelmente em um grau ainda maior.",
+        "O costume nos leva a descrever o atleta como um inventário de qualidades. Tem tanto de força, tanto de resistência, certo nível técnico, boa ou má cabeça. É uma forma útil de falar, mas enganosa, porque sugere que essas qualidades existem separadamente e que o rendimento se obtém somando-as. Na realidade da partida não há nada que funcione isolado: um controle sob pressão é ao mesmo tempo um ato físico, técnico, perceptivo, emocional e de relação com os companheiros e o adversário, tudo ao mesmo tempo e em uma fração de segundo.",
+        "Seirul·lo propõe entender a pessoa que pratica esporte como uma estrutura hipercomplexa, integrada por várias subestruturas que interagem de forma permanente: a condicional, a coordenativa, a cognitiva, a emotivo-volitiva, a criativo-expressiva e a socioafetiva. Não são compartimentos estanques nem uma ordem de prioridades; são dimensões de uma mesma pessoa que se ativam juntas em cada ação. Quando um jogador resolve uma jogada, não usa uma estrutura e depois outra: coloca todas em jogo ao mesmo tempo.",
+        "A ideia-chave é que o rendimento não é a soma dessas estruturas, e sim o que emerge da sua interação. Emergência é um termo preciso, não decorativo: descreve propriedades que aparecem no sistema completo e que não estão contidas em nenhuma de suas partes separadamente. Assim como a temperatura de um gás não reside em nenhuma molécula individual, a capacidade de um jogador de resolver uma situação não reside em sua força nem em sua técnica isoladas, mas em como ambas, junto ao resto, se coordenam naquele instante concreto.",
+        "Isso muda por completo o sentido de muitas avaliações. Que um jogador melhore em um teste isolado —mais quilos no agachamento, melhor tempo em um sprint linear— não garante que renda melhor onde importa, porque esse teste mede uma peça fora do sistema no qual normalmente opera. O dado continua sendo informação valiosa, mas deixa de ser o objetivo: o objetivo é a interação, e a interação só se observa em contextos que se parecem com o jogo.",
+        "A ciência das últimas duas décadas oferece um marco para pensar tudo isso. Trabalhos como os de Balagué, Pol, Torrents e outros pesquisadores descrevem o rendimento esportivo em termos de sinergias e de restrições aninhadas que atuam em diferentes escalas de tempo, vinculadas entre si por uma causalidade circular: cada elemento condiciona os demais e ao mesmo tempo é condicionado por eles. Não há uma causa única nem uma cadeia linear de efeitos; há uma rede que se reorganiza de forma contínua. Essa é, no fundo, a diferença entre somar e sinergizar.",
+        "Para o trabalho diário, assumir esse olhar tem uma consequência muito concreta: o preparador físico deixa de pensar em termos de qualidades a preencher e começa a pensar em interações a provocar. A pergunta já não é só quanta força tem este jogador, mas como essa força se relaciona com sua coordenação, com sua capacidade de decidir e com seu estado emocional quando a partida aperta. O estímulo que desenhamos deveria pôr em relação várias estruturas ao mesmo tempo, porque é assim que elas se expressam na competição.",
+        "Convém evitar dois extremos. Reduzir o atleta à sua estrutura condicional é ficar aquém, porque ignora tudo o que sustenta essa força no jogo real. Mas se sobrecarregar diante de tanta interação e cair no 'vale tudo' tampouco ajuda. Pensar de forma sistêmica não consiste em controlar tudo, mas em reconhecer quais coisas se influenciam entre si e em aceitar que a ordem não se impõe de fora: favorece-se a partir do desenho das situações.",
+        "Nos próximos artigos iremos trazendo essa ideia para o terreno: como se traduz no treinamento de força, na modulação das tensões através da fáscia e na organização da semana. Mas o ponto de partida é essa mudança de olhar. Enquanto continuarmos vendo o jogador como uma soma de qualidades, continuaremos treinando peças. Quando o vemos como um sistema que se reorganiza, começamos a treinar o jogador.",
+        "Referências e leituras recomendadas:",
+        "Seirul·lo Vargas, F. (2017). El entrenamiento en los deportes de equipo. Barcelona: Mastercede.",
+        "Pol, R., Balagué, N., Ric, A., Torrents, C., Kiely, J. & Hristovski, R. (2020). Training or Synergizing? Complex Systems Principles Change the Understanding of Sport Processes. Sports Medicine - Open, 6, 28.",
+        "Balagué, N., Pol, R., Torrents, C., Ric, A. & Hristovski, R. (2019). On the Relatedness and Nestedness of Constraints. Sports Medicine - Open, 5, 6.",
+        "Balagué, N., Torrents, C., Hristovski, R., Davids, K. & Araújo, D. (2013). Overview of complex systems in sport. Journal of Systems Science and Complexity, 26(1), 4–13."
+      ]
+    },
+    "figures": [
+      {
+        "src": "assets/figuras/pol-2020-fig2.png",
+        "after": 4,
+        "caption": {
+          "es": "Niveles de organización —del gen al campeonato— que interactúan por causalidad circular a distintas escalas de tiempo.",
+          "en": "Levels of organization —from gene to championship— interacting through circular causality across timescales.",
+          "pt": "Níveis de organização —do gene ao campeonato— que interagem por causalidade circular em diferentes escalas de tempo."
+        },
+        "credit": "Pol, R. et al. (2020). Sports Medicine - Open, 6:28. Licencia CC BY 4.0.",
+        "link": "https://doi.org/10.1186/s40798-020-00256-9"
+      },
+      {
+        "src": "assets/figuras/balague-2019-fig4.png",
+        "after": 6,
+        "caption": {
+          "es": "Restricciones anidadas que operan a distintas escalas de tiempo y se correlacionan mediante causalidad circular.",
+          "en": "Nested constraints operating at different timescales and correlated through circular causality.",
+          "pt": "Restrições aninhadas que operam em diferentes escalas de tempo e se correlacionam por causalidade circular."
+        },
+        "credit": "Balagué, N. et al. (2019). Sports Medicine - Open, 5:6. Licencia CC BY 4.0.",
+        "link": "https://doi.org/10.1186/s40798-019-0178-z"
+      },
+      {
+        "src": "assets/figuras/balague-2019-fig1.png",
+        "after": 8,
+        "caption": {
+          "es": "La tarea como propiedad emergente del sistema deportista–entorno: no existe fuera de esa relación.",
+          "en": "The task as an emergent property of the athlete–environment system: it does not exist outside that relationship.",
+          "pt": "A tarefa como propriedade emergente do sistema atleta–ambiente: não existe fora dessa relação."
+        },
+        "credit": "Balagué, N. et al. (2019). Sports Medicine - Open, 5:6. Licencia CC BY 4.0.",
+        "link": "https://doi.org/10.1186/s40798-019-0178-z"
+      }
+    ]
+  },
+  {
     "id": "paradigma-complejidad",
     "image": "assets/fotos/IMG_6012.JPG",
     "date": { "es": "Jun 2026", "en": "Jun 2026", "pt": "Jun 2026" },

@@ -81,6 +81,7 @@
             <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
             <li><a href="#cases">Casos</a></li>
             <li><a href="metodologia.html" data-i18n="nav.leadership">Liderazgo</a></li>
+            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
             <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Contacto</a></li>
         </ul>
         <div class="lang-switcher" aria-label="Language switcher">
@@ -413,8 +414,11 @@
                 <span class="section-subtitle" data-i18n="blog.subtitle">Reflexiones</span>
                 <h2 class="section-title" data-i18n="blog.title">Blog <span>personal</span></h2>
             </div>
-            <div class="blog-grid">
-                <!-- Las tarjetas se generan desde posts.json vía blog.js -->
+            <div class="blog-grid" data-limit="3">
+                <!-- Las tarjetas se generan desde posts.json vía blog.js (solo las 3 más recientes) -->
+            </div>
+            <div class="blog-viewall-wrap">
+                <a href="blog.html" class="blog-viewall" data-i18n="blog.viewall">Ver todo el blog</a>
             </div>
         </div>
     </section>
@@ -475,14 +479,6 @@
     <a href="https://wa.me/971501505371" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Blog Modal -->
-    <div id="blog-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-body"></div>
-        </div>
-    </div>
 
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
