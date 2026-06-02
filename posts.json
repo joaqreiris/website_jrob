@@ -1,26 +1,66 @@
 [
   {
     "id": "big-data-futbol",
-    "date": "Oct 2023",
-    "title": "Big Data aplicado al fútbol moderno",
     "image": "assets/fotos/IMG_6012.JPG",
-    "excerpt": "Cómo el análisis avanzado de datos está cambiando la forma en que periodizamos el entrenamiento y construimos el calendario competitivo.",
-    "body": [
-      "El fútbol ha dejado de ser un juego de intuiciones para convertirse en un juego de datos procesados. La cuantificación de la carga externa, el control de la fatiga y la lectura de patrones de movimiento permiten tomar decisiones con evidencia, no con corazonadas.",
-      "Desde la cuantificación de la carga externa hasta la predicción de riesgo de lesiones, los algoritmos nos ayudan a afinar el ojo del entrenador. El dato no sustituye la decisión técnica: la informa, la sostiene y la hace defendible ante el cuerpo técnico.",
-      "El reto no es recolectar más datos, sino transformar el dato en una decisión accionable dentro del microciclo. Ahí es donde el preparador físico moderno aporta su mayor valor."
-    ]
+    "date": { "es": "Oct 2023", "en": "Oct 2023", "pt": "Out 2023" },
+    "title": {
+      "es": "Big Data aplicado al fútbol moderno",
+      "en": "Big Data applied to modern football",
+      "pt": "Big Data aplicado ao futebol moderno"
+    },
+    "excerpt": {
+      "es": "Cómo el análisis avanzado de datos está cambiando la forma en que periodizamos el entrenamiento y construimos el calendario competitivo.",
+      "en": "How advanced data analysis is changing the way we periodize training and build the competitive calendar.",
+      "pt": "Como a análise avançada de dados está mudando a forma como periodizamos o treinamento e construímos o calendário competitivo."
+    },
+    "body": {
+      "es": [
+        "El fútbol ha dejado de ser un juego de intuiciones para convertirse en un juego de datos procesados. La cuantificación de la carga externa, el control de la fatiga y la lectura de patrones de movimiento permiten tomar decisiones con evidencia, no con corazonadas.",
+        "Desde la cuantificación de la carga externa hasta la predicción de riesgo de lesiones, los algoritmos nos ayudan a afinar el ojo del entrenador. El dato no sustituye la decisión técnica: la informa, la sostiene y la hace defendible ante el cuerpo técnico.",
+        "El reto no es recolectar más datos, sino transformar el dato en una decisión accionable dentro del microciclo. Ahí es donde el preparador físico moderno aporta su mayor valor."
+      ],
+      "en": [
+        "Football has stopped being a game of intuitions to become a game of processed data. Quantifying external load, controlling fatigue and reading movement patterns allow decisions to be made with evidence, not hunches.",
+        "From quantifying external load to predicting injury risk, algorithms help us sharpen the coach's eye. Data doesn't replace the technical decision: it informs it, supports it and makes it defensible before the coaching staff.",
+        "The challenge is not to collect more data, but to turn data into an actionable decision within the microcycle. That's where the modern fitness coach adds the most value."
+      ],
+      "pt": [
+        "O futebol deixou de ser um jogo de intuições para se tornar um jogo de dados processados. A quantificação da carga externa, o controle da fadiga e a leitura de padrões de movimento permitem tomar decisões com evidência, não com palpites.",
+        "Desde a quantificação da carga externa até a previsão de risco de lesões, os algoritmos nos ajudam a afinar o olho do treinador. O dado não substitui a decisão técnica: a informa, a sustenta e a torna defensável diante da comissão técnica.",
+        "O desafio não é coletar mais dados, mas transformar o dado em uma decisão acionável dentro do microciclo. É aí que o preparador físico moderno agrega seu maior valor."
+      ]
+    }
   },
   {
     "id": "united-pirlo",
-    "date": "Sep 2023",
-    "title": "Experiencia United FC y Andrea Pirlo",
     "image": "assets/fotos/IMG_6995.JPG",
-    "excerpt": "Lecciones aprendidas trabajando con uno de los grandes del fútbol mundial en Emiratos Árabes Unidos — gestión, intensidad y cultura.",
-    "body": [
-      "Trabajar en el staff técnico de Andrea Pirlo en los Emiratos Árabes Unidos fue una experiencia transformadora. Aprender de cerca cómo una leyenda del juego lee el rendimiento desde la perspectiva del entrenador cambió mi manera de comunicar el trabajo físico.",
-      "En este entorno de élite, la gestión de la fatiga y la optimización de los estados de forma adquieren una dimensión crítica. El uso de tecnología GPS de última generación nos permitió monitorizar cada esfuerzo y ajustar la carga jugador por jugador.",
-      "La mayor lección: en el alto rendimiento, la diferencia no la marca el plan más sofisticado, sino la coherencia entre lo que el cuerpo técnico pide en el campo y lo que el departamento físico sostiene desde los datos."
-    ]
+    "date": { "es": "Sep 2023", "en": "Sep 2023", "pt": "Set 2023" },
+    "title": {
+      "es": "Experiencia United FC y Andrea Pirlo",
+      "en": "United FC and Andrea Pirlo experience",
+      "pt": "Experiência United FC e Andrea Pirlo"
+    },
+    "excerpt": {
+      "es": "Lecciones aprendidas trabajando con uno de los grandes del fútbol mundial en Emiratos Árabes Unidos — gestión, intensidad y cultura.",
+      "en": "Lessons learned working with one of football's greats in the United Arab Emirates — management, intensity and culture.",
+      "pt": "Lições aprendidas trabalhando com um dos grandes do futebol mundial nos Emirados Árabes Unidos — gestão, intensidade e cultura."
+    },
+    "body": {
+      "es": [
+        "Trabajar en el staff técnico de Andrea Pirlo en los Emiratos Árabes Unidos fue una experiencia transformadora. Aprender de cerca cómo una leyenda del juego lee el rendimiento desde la perspectiva del entrenador cambió mi manera de comunicar el trabajo físico.",
+        "En este entorno de élite, la gestión de la fatiga y la optimización de los estados de forma adquieren una dimensión crítica. El uso de tecnología GPS de última generación nos permitió monitorizar cada esfuerzo y ajustar la carga jugador por jugador.",
+        "La mayor lección: en el alto rendimiento, la diferencia no la marca el plan más sofisticado, sino la coherencia entre lo que el cuerpo técnico pide en el campo y lo que el departamento físico sostiene desde los datos."
+      ],
+      "en": [
+        "Working on Andrea Pirlo's coaching staff in the United Arab Emirates was a transformative experience. Learning up close how a legend of the game reads performance from the coach's perspective changed the way I communicate physical work.",
+        "In this elite environment, fatigue management and form-state optimization take on a critical dimension. The use of latest-generation GPS technology allowed us to monitor every effort and adjust load player by player.",
+        "The biggest lesson: in high performance, the difference is not made by the most sophisticated plan, but by the coherence between what the coaching staff asks for on the pitch and what the fitness department sustains from the data."
+      ],
+      "pt": [
+        "Trabalhar na comissão técnica de Andrea Pirlo nos Emirados Árabes Unidos foi uma experiência transformadora. Aprender de perto como uma lenda do jogo lê o rendimento sob a perspectiva do treinador mudou a minha forma de comunicar o trabalho físico.",
+        "Neste ambiente de elite, a gestão da fadiga e a otimização dos estados de forma adquirem uma dimensão crítica. O uso de tecnologia GPS de última geração nos permitiu monitorar cada esforço e ajustar a carga jogador por jogador.",
+        "A maior lição: no alto rendimento, a diferença não é feita pelo plano mais sofisticado, mas pela coerência entre o que a comissão técnica pede em campo e o que o departamento físico sustenta a partir dos dados."
+      ]
+    }
   }
 ]
