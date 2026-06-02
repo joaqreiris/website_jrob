@@ -1,0 +1,26 @@
+[
+  {
+    "id": "big-data-futbol",
+    "date": "Oct 2023",
+    "title": "Big Data aplicado al fútbol moderno",
+    "image": "assets/fotos/IMG_6012.JPG",
+    "excerpt": "Cómo el análisis avanzado de datos está cambiando la forma en que periodizamos el entrenamiento y construimos el calendario competitivo.",
+    "body": [
+      "El fútbol ha dejado de ser un juego de intuiciones para convertirse en un juego de datos procesados. La cuantificación de la carga externa, el control de la fatiga y la lectura de patrones de movimiento permiten tomar decisiones con evidencia, no con corazonadas.",
+      "Desde la cuantificación de la carga externa hasta la predicción de riesgo de lesiones, los algoritmos nos ayudan a afinar el ojo del entrenador. El dato no sustituye la decisión técnica: la informa, la sostiene y la hace defendible ante el cuerpo técnico.",
+      "El reto no es recolectar más datos, sino transformar el dato en una decisión accionable dentro del microciclo. Ahí es donde el preparador físico moderno aporta su mayor valor."
+    ]
+  },
+  {
+    "id": "united-pirlo",
+    "date": "Sep 2023",
+    "title": "Experiencia United FC y Andrea Pirlo",
+    "image": "assets/fotos/IMG_6995.JPG",
+    "excerpt": "Lecciones aprendidas trabajando con uno de los grandes del fútbol mundial en Emiratos Árabes Unidos — gestión, intensidad y cultura.",
+    "body": [
+      "Trabajar en el staff técnico de Andrea Pirlo en los Emiratos Árabes Unidos fue una experiencia transformadora. Aprender de cerca cómo una leyenda del juego lee el rendimiento desde la perspectiva del entrenador cambió mi manera de comunicar el trabajo físico.",
+      "En este entorno de élite, la gestión de la fatiga y la optimización de los estados de forma adquieren una dimensión crítica. El uso de tecnología GPS de última generación nos permitió monitorizar cada esfuerzo y ajustar la carga jugador por jugador.",
+      "La mayor lección: en el alto rendimiento, la diferencia no la marca el plan más sofisticado, sino la coherencia entre lo que el cuerpo técnico pide en el campo y lo que el departamento físico sostiene desde los datos."
+    ]
+  }
+]
