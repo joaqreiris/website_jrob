@@ -6,6 +6,12 @@ Se abre directamente en el navegador / se despliega en cualquier hosting estáti
 probar en local hace falta servirlo por HTTP (`python3 -m http.server` o similar),
 no abrir el archivo con `file://`.
 
+## Git — REGLA OBLIGATORIA: commit + push
+
+**Todo cambio se cierra SIEMPRE con `git commit` Y `git push` a `origin/main`.**
+No dejar commits locales sin subir: si se committea, se pushea en la misma tanda.
+El sitio se publica desde el repo, así que sin push no hay deploy. (Trabajo en `main`.)
+
 ## Estructura
 
 | Archivo | Qué es |
