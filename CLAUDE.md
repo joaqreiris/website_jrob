@@ -64,12 +64,31 @@ Editar **`posts.json`** y añadir un objeto al array:
 
 `blog.js` genera la tarjeta y el modal automáticamente. No hace falta tocar HTML ni JS.
 
-## Traducciones (ES / EN / PT)
+## Traducciones (ES / EN / PT) — REGLA OBLIGATORIA
 
-Las cadenas viven en el objeto `translations` dentro de `main.js` (claves `data-i18n`).
-Hay un comentario-guía al inicio de ese objeto con las claves pendientes de sincronizar
-contra el CV. El ES refleja el copy actual; EN y PT pueden tener texto antiguo —
-al actualizarlos, reflejar los valores del ES.
+**Todo cambio de contenido se hace en los TRES idiomas (ES, EN, PT), siempre.**
+Nunca dejar una cadena nueva o editada solo en español. Si se agrega o cambia
+cualquier texto visible, hay que entregarlo traducido a los tres idiomas en la
+misma tanda. Si no se conoce la traducción exacta de un dato real, preguntar —
+no dejarlo a medias ni con texto de otro idioma como relleno.
+
+Cómo se aplica en la práctica:
+
+- **Texto en `index.html`**: todo nodo de texto traducible lleva `data-i18n="clave"`
+  (o `data-i18n-ph="clave"` para placeholders de inputs), y la `clave` debe existir
+  en los bloques `es`, `en` y `pt` del objeto `translations` de `main.js`.
+- **`changeLanguage` (main.js)** ya soporta HTML en los valores: si la traducción
+  contiene `<` (p. ej. `<em>` o `<span>`), se inyecta con `innerHTML` y se preserva
+  el estilo; si no, usa `textContent`. Mantener los `<em>`/`<span>` en las 3 versiones.
+- **Blog**: en `posts.json` los campos `date`, `title`, `excerpt` y `body` son objetos
+  `{ "es": ..., "en": ..., "pt": ... }`. Una entrada nueva se publica completa en los
+  tres idiomas. `blog.js` re-renderiza al cambiar de idioma.
+- **Otras páginas** (`sobre-mi.html`, `metodologia.html`) siguen la misma regla con
+  sus propias cadenas.
+- **Verificar antes de cerrar**: cada `data-i18n` del HTML tiene que tener clave en
+  los tres bloques de idioma (ES/EN/PT). No dejar claves huérfanas.
+
+El ES es la fuente de verdad del copy; EN y PT reflejan fielmente el ES.
 
 ## Contacto / datos clave del CV
 
