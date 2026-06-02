@@ -777,7 +777,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "pt": { country: "Emirados Árabes Unidos", role: "Head of Performance. Liderança do departamento físico na equipe técnica de Andrea Pirlo (1.ª Div. EAU)." },
             club: "United Football Club",
             logo: "assets/squads/United FC.png",
-            year: "2024 - 2025"
+            year: "2024 - 2026"
         },
         "IT": {
             "es": { country: "Italia", role: "Strength & Conditioning Coach / Rehab Specialist. Gestión de cargas y recuperación de lesiones en la Serie A." },
@@ -791,16 +791,16 @@ document.addEventListener("DOMContentLoaded", () => {
             "es": { country: "Camboya", role: "Director de Rendimiento. Planificación integral del primer equipo y control de fatiga en la Premier League." },
             "en": { country: "Cambodia", role: "Performance Director. Comprehensive first-team planning and fatigue control in the Premier League." },
             "pt": { country: "Camboja", role: "Diretor de Desempenho. Planejamento integral do time principal e controle de fadiga na Premier League." },
-            club: "MOI Kompong DEWA FC",
+            club: "MOI Kompong Dewa FC",
             logo: "assets/squads/MOI_Kompong_Dewa.png",
-            year: "2025 - 2026"
+            year: "2026"
         },
         "UY": {
             "es": { country: "Uruguay", role: "Preparador Físico. Coordinación de programas de acondicionamiento y readaptación en el fútbol profesional uruguayo.", year: "Trayectoria Local" },
             "en": { country: "Uruguay", role: "Fitness Coach. Coordination of conditioning and rehabilitation programs in Uruguayan professional football.", year: "Local Career" },
             "pt": { country: "Uruguai", role: "Preparador Físico. Coordenação de programas de condicionamento e readaptação no futebol profissional uruguaio.", year: "Trajetória Local" },
-            club: "MUFP / Canadian Soccer Club",
-            logos: ["assets/squads/MUFP.png", "assets/squads/Canadian.png"]
+            club: "MUFP / Canadian SC / Carrasco Polo Club",
+            logos: ["assets/squads/MUFP.png", "assets/squads/Canadian.png", "assets/squads/Carrasco.png"]
         }
     };
 
