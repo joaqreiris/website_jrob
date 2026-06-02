@@ -532,22 +532,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    const heroTitleHTML = {
+        "es": '<span class="line"><span>Gestión integral</span></span><span class="line"><span>del <em>rendimiento</em>.</span></span>',
+        "en": '<span class="line"><span>Integral</span></span><span class="line"><span><em>Performance</em> Management.</span></span>',
+        "pt": '<span class="line"><span>Gestão integral</span></span><span class="line"><span>do <em>rendimento</em>.</span></span>'
+    };
+
     function changeLanguage(lang) {
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const key = el.getAttribute("data-i18n");
+            if (key === "hero.title") return; // handled separately below
             if (translations[lang][key]) {
                 el.textContent = translations[lang][key];
             }
         });
-        
+
+        const glitch = document.querySelector(".glitch");
+        if (glitch) {
+            glitch.innerHTML = heroTitleHTML[lang] || heroTitleHTML["es"];
+            glitch.setAttribute("data-text", translations[lang]["hero.title"] || translations["es"]["hero.title"]);
+        }
+
         document.querySelectorAll(".lang-btn").forEach(btn => {
             btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
         });
 
-        const glitch = document.querySelector(".glitch");
-        if (glitch && translations[lang]["hero.title"]) {
-            glitch.setAttribute("data-text", translations[lang]["hero.title"]);
-        }
+        document.documentElement.lang = lang;
     }
 
     document.querySelectorAll(".lang-btn").forEach(btn => {
@@ -556,6 +566,15 @@ document.addEventListener("DOMContentLoaded", () => {
             changeLanguage(lang);
         });
     });
+
+    // Auto-detect language from browser
+    (function detectLang() {
+        const nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+        let lang = "en";
+        if (nav.startsWith("es")) lang = "es";
+        else if (nav.startsWith("pt")) lang = "pt";
+        changeLanguage(lang);
+    })();
 
     // World Map Experience Data
     const experienceData = {
