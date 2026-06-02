@@ -1817,6 +1817,7 @@ footer {
   .stat-item:last-child { border-bottom: 0; }
   .academic-card.featured { transform: none; }
   .quote-parallax { background-attachment: scroll; min-height: 360px; }
+  .hero::before { background-attachment: scroll; }
   blockquote { padding-left: 1.5rem; }
   .structure-circle { width: 220px; height: 220px; }
   .n2, .n3 { right: -40px; }
@@ -1827,6 +1828,9 @@ footer {
   .slider-arrow.prev { left: 4px; }
   .slider-arrow.next { right: 4px; }
   .principle-item { height: 380px; padding: 2rem; }
+  .map-wrapper { padding: 1.25rem; }
+  #world-map { height: 320px; }
+  .map-wrapper::before { font-size: 0.55rem; top: 0.85rem; left: 1rem; }
 }
 
 /* =========================================================
