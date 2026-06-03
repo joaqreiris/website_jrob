@@ -200,6 +200,41 @@
   text-wrap: balance;
 }
 
+/* Principios del Acto 3 */
+.principles {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+}
+.principles li {
+  color: var(--text-2);
+  line-height: 1.6;
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line);
+}
+.principle-k {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+}
+.values-line {
+  margin-top: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.bio-cta {
+  margin-top: 1.5rem;
+  color: var(--text-3);
+}
+
 /* ============== TRAYECTORIA ============== */
 .trajectory {
   padding: 7rem 0 5rem;
@@ -361,7 +396,7 @@
 
 .endorsement {
   display: grid;
-  grid-template-columns: 64px 1fr 240px;
+  grid-template-columns: 64px 1fr 300px;
   gap: 3rem;
   padding: 4rem 0;
   border-bottom: 1px solid var(--line);
@@ -408,17 +443,17 @@
 .endorsement-author {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1rem;
   align-items: flex-start;
-  padding-left: 1.5rem;
+  padding-left: 1.75rem;
   border-left: 1px solid var(--line);
   position: sticky;
   top: 6rem;
 }
 .endorsement-img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+  border-radius: var(--radius);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -436,25 +471,25 @@
 }
 .endorsement-name {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.01em;
-  white-space: nowrap;
+  white-space: normal;
 }
 .endorsement-role {
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary);
   line-height: 1.4;
 }
 .endorsement-career {
-  font-size: 0.82rem;
-  color: var(--text-3);
-  line-height: 1.55;
-  margin-top: 0.5rem;
+  color: var(--text-2);
+  font-size: 0.9rem;
+  line-height: 1.62;
+  margin-top: 0.6rem;
 }
 
 /* ============== TOOLSET — Idiomas & herramientas ============== */
@@ -564,7 +599,8 @@
     align-items: center;
   }
   .endorsement-author .endorsement-meta { flex: 1; }
-  .endorsement-career { margin-top: 0; }
+  .endorsement-img { width: 88px; height: 88px; }
+  .endorsement-career { margin-top: 0.5rem; }
   .toolset-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
 
