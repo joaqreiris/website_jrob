@@ -439,20 +439,21 @@
   padding-left: 1.75rem;
   border-left: 1px solid var(--line);
   position: sticky;
-  top: 6rem;
+  top: 0; /* arranca alineado con el número y la cita */
 }
+/* .endorsement-img es el propio <img>, no un contenedor:
+   object-fit/position van aquí para que no se estire. */
 .endorsement-img {
-  width: 104px;
-  height: 104px;
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   border-radius: var(--radius);
   overflow: hidden;
   flex-shrink: 0;
-}
-.endorsement-img img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  display: block;
+  object-position: 50% 20%; /* centra y sube un poco para encuadrar la cara */
 }
 
 .endorsement-meta {
@@ -590,7 +591,7 @@
     align-items: center;
   }
   .endorsement-author .endorsement-meta { flex: 1; }
-  .endorsement-img { width: 88px; height: 88px; }
+  .endorsement-img { max-width: 140px; } /* mantiene aspect-ratio 4/5 de la base */
   .endorsement-career { margin-top: 0.5rem; }
   .toolset-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
