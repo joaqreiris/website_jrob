@@ -206,7 +206,7 @@
   margin: 1.5rem 0 0;
   padding: 0;
   display: grid;
-  gap: 1.1rem;
+  gap: 0.8rem;
 }
 .principles li {
   color: var(--text-2);
@@ -215,20 +215,11 @@
   border-left: 1px solid var(--line);
 }
 .principle-k {
-  display: block;
+  display: inline;
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.01em;
-  margin-bottom: 0.15rem;
-}
-.values-line {
-  margin-top: 2rem;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--primary);
 }
 .bio-cta {
   margin-top: 1.5rem;
