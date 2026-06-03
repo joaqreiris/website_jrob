@@ -2246,6 +2246,26 @@ footer {
   font-variant-numeric: tabular-nums;
 }
 
+/* Popup de rol sobre los escudos */
+.exp-logo-pop {
+  position: fixed;
+  z-index: 60;
+  max-width: 240px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .15s ease, transform .15s ease;
+  pointer-events: none;
+}
+.exp-logo-pop.show { opacity: 1; transform: translateY(0); }
+.exp-logo-pop .pop-club { display:block; font-family: var(--font-display); font-weight:600; color: var(--text); font-size:.95rem; }
+.exp-logo-pop .pop-role { display:block; font-family: var(--font-mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color: var(--primary); margin-top:.25rem; }
+.exp-logo { cursor: default; }
+
 @media (max-width: 900px) {
   .exp-logos { grid-template-columns: repeat(4, 1fr); }
   .exp-logo:nth-child(4) { border-right: 0; }

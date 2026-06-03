@@ -252,46 +252,46 @@
 
             <!-- Tira de escudos por país -->
             <div class="exp-logos" data-aos="fade-up">
-                <a class="exp-logo" href="sobre-mi.html">
+                <div class="exp-logo" tabindex="0" data-club="MOI Kompong Dewa FC" data-role-es="Preparador Físico — 1.er Equipo" data-role-en="Fitness Coach — First Team" data-role-pt="Preparador Físico — Time Principal">
                     <img src="assets/squads/MOI_Kompong_Dewa.png" alt="MOI Kompong Dewa FC">
                     <span class="exp-logo-c" data-i18n="country.cambodia">Camboya</span>
-                    <span class="exp-logo-y">2026</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
+                    <span class="exp-logo-y">2025—26</span>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="United Football Club" data-role-es="Head of Performance" data-role-en="Head of Performance" data-role-pt="Head of Performance">
                     <img class="white-logo" src="assets/squads/United FC.png" alt="United FC">
                     <span class="exp-logo-c" data-i18n="country.uae">Emiratos Á. U.</span>
-                    <span class="exp-logo-y">2024—26</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
-                    <img src="assets/squads/Velez.png" alt="Vélez CF">
-                    <span class="exp-logo-c" data-i18n="country.spain">España</span>
-                    <span class="exp-logo-y">2023—24</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
+                    <span class="exp-logo-y">2024—25</span>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="Udinese Calcio" data-role-es="S&amp;C / Readaptador — 1.er Equipo" data-role-en="S&amp;C / Rehab — First Team" data-role-pt="S&amp;C / Readaptador — Time Principal">
                     <img src="assets/squads/Udinese.png" alt="Udinese Calcio">
                     <span class="exp-logo-c" data-i18n="country.italy">Italia</span>
                     <span class="exp-logo-y">2022—23</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
-                    <img src="assets/squads/SanBartolome.png" alt="San Bartolomé CF">
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="Vélez Club de Fútbol" data-role-es="S&amp;C / Readaptador — 1.er Equipo" data-role-en="S&amp;C / Rehab — First Team" data-role-pt="S&amp;C / Readaptador — Time Principal">
+                    <img src="assets/squads/Velez.png" alt="Vélez CF">
                     <span class="exp-logo-c" data-i18n="country.spain">España</span>
-                    <span class="exp-logo-y">2020—21</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
-                    <img src="assets/squads/Carrasco.png" alt="Carrasco Polo Club">
-                    <span class="exp-logo-c" data-i18n="country.uruguay">Uruguay</span>
-                    <span class="exp-logo-y">2018—19</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
+                    <span class="exp-logo-y">2020—24</span>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="FC Eindhoven" data-role-es="Preparador Físico Asistente — 1.er Equipo" data-role-en="Assistant Fitness Coach — First Team" data-role-pt="Preparador Físico Assistente — Time Principal">
+                    <img src="assets/squads/FC_Eindhoven.png" alt="FC Eindhoven">
+                    <span class="exp-logo-c" data-i18n="country.netherlands">Países Bajos</span>
+                    <span class="exp-logo-y">2021—22</span>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="Mutual Uruguaya de Futbolistas Profesionales" data-role-es="Preparador Físico" data-role-en="Fitness Coach" data-role-pt="Preparador Físico">
                     <img src="assets/squads/MUFP.png" alt="Mutual Uruguaya de Futbolistas Profesionales">
                     <span class="exp-logo-c" data-i18n="country.uruguay">Uruguay</span>
-                    <span class="exp-logo-y">2018—19</span>
-                </a>
-                <a class="exp-logo" href="sobre-mi.html">
+                    <span class="exp-logo-y">2014—19</span>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="Canadian Soccer Club" data-role-es="Preparador Físico — 1.er Equipo" data-role-en="Fitness Coach — First Team" data-role-pt="Preparador Físico — Time Principal">
                     <img src="assets/squads/Canadian.png" alt="Canadian Soccer Club">
                     <span class="exp-logo-c" data-i18n="country.uruguay">Uruguay</span>
                     <span class="exp-logo-y">2016—18</span>
-                </a>
+                </div>
+                <div class="exp-logo" tabindex="0" data-club="Carrasco Polo Club" data-role-es="Preparador Físico" data-role-en="Fitness Coach" data-role-pt="Preparador Físico">
+                    <img src="assets/squads/Carrasco.png" alt="Carrasco Polo Club">
+                    <span class="exp-logo-c" data-i18n="country.uruguay">Uruguay</span>
+                    <span class="exp-logo-y">2018—19</span>
+                </div>
             </div>
         </div>
     </section>
@@ -526,5 +526,34 @@
     <script src="main.js"></script>
     <!-- blog.js: renderiza las entradas del blog desde posts.json -->
     <script src="blog.js"></script>
+    <!-- Popup de rol sobre los escudos de Experiencia -->
+    <script>
+    (function(){
+      const logos = document.querySelectorAll('.exp-logo');
+      if(!logos.length) return;
+      const pop = document.createElement('div');
+      pop.className = 'exp-logo-pop';
+      pop.innerHTML = '<span class="pop-club"></span><span class="pop-role"></span>';
+      document.body.appendChild(pop);
+      const clubEl = pop.querySelector('.pop-club'), roleEl = pop.querySelector('.pop-role');
+      let current = null;
+      const lang = () => { const l = document.documentElement.lang || 'es'; return ['es','en','pt'].includes(l) ? l : 'es'; };
+      function fill(el){ clubEl.textContent = el.getAttribute('data-club') || ''; roleEl.textContent = el.getAttribute('data-role-'+lang()) || el.getAttribute('data-role-es') || ''; }
+      function position(el){ const r = el.getBoundingClientRect(), pr = pop.getBoundingClientRect(); let left = r.left + r.width/2 - pr.width/2; left = Math.max(8, Math.min(left, window.innerWidth - pr.width - 8)); let top = r.top - pr.height - 10; if(top < 8) top = r.bottom + 10; pop.style.left = left+'px'; pop.style.top = top+'px'; }
+      function show(el){ current = el; fill(el); pop.classList.add('show'); position(el); }
+      function hide(){ current = null; pop.classList.remove('show'); }
+      logos.forEach(el => {
+        el.addEventListener('mouseenter', () => show(el));
+        el.addEventListener('mouseleave', hide);
+        el.addEventListener('focus', () => show(el));
+        el.addEventListener('blur', hide);
+        el.addEventListener('click', (e) => { e.preventDefault(); current === el ? hide() : show(el); });
+      });
+      document.addEventListener('click', (e) => { if(current && !e.target.closest('.exp-logo')) hide(); });
+      window.addEventListener('scroll', hide, { passive:true });
+      window.addEventListener('resize', hide);
+      document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => { if(current) fill(current); }));
+    })();
+    </script>
 </body>
 </html>
