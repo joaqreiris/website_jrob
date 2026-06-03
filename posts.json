@@ -166,6 +166,7 @@
   },
   {
     "id": "big-data-futbol",
+    "hidden": true,
     "image": "assets/fotos/IMG_6012.JPG",
     "date": { "es": "Oct 2023", "en": "Oct 2023", "pt": "Out 2023" },
     "title": {
@@ -198,6 +199,7 @@
   },
   {
     "id": "united-pirlo",
+    "hidden": true,
     "image": "assets/fotos/IMG_6995.JPG",
     "date": { "es": "Sep 2023", "en": "Sep 2023", "pt": "Set 2023" },
     "title": {

@@ -267,7 +267,7 @@
   // ---- Carga ----
   fetch("posts.json")
     .then(r => { if (!r.ok) throw new Error("posts.json " + r.status); return r.json(); })
-    .then(data => { posts = data; route(); })
+    .then(data => { posts = data.filter(p => !p.hidden); route(); })
     .catch(err => {
       console.warn("[blog] No se pudo cargar posts.json:", err.message);
     });
