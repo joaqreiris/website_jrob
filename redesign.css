@@ -857,8 +857,8 @@ section { padding: 7rem 0; position: relative; z-index: 1; }
 .academic-card.featured:hover { border-color: var(--primary); }
 
 .card-tag {
-  position: absolute;
-  top: 1rem; right: 1rem;
+  align-self: flex-start;
+  margin-bottom: 0.35rem;
   background: var(--primary);
   color: #fff;
   font-family: var(--font-mono);
@@ -1198,6 +1198,19 @@ path.country.active-country:hover {
   backdrop-filter: blur(12px);
 }
 .map-tooltip.active { opacity: 1; transform: translateY(0); }
+.tooltip-close {
+  display: none; /* solo visible en móvil */
+  position: absolute;
+  top: 0.5rem; right: 0.6rem;
+  background: transparent;
+  border: 0;
+  color: var(--text-3);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.15rem 0.45rem;
+}
+.tooltip-close:hover { color: var(--primary); }
 .tooltip-header {
   display: flex; justify-content: space-between; align-items: flex-start;
   margin-bottom: 0.6rem;
@@ -2045,6 +2058,22 @@ footer {
   .map-wrapper { padding: 1.25rem; }
   #world-map { height: 320px; }
   .map-wrapper::before { font-size: 0.55rem; top: 0.85rem; left: 1rem; }
+
+  /* Mapa: en móvil el cuadro de info es una barra fija, legible, abajo */
+  .map-tooltip {
+    position: fixed;
+    left: 0; right: 0; bottom: 0; top: auto;
+    width: 100%;
+    max-width: none;
+    padding: 1.25rem 1.25rem 1.5rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    border-left: 0; border-right: 0; border-bottom: 0;
+    transform: translateY(100%);
+    pointer-events: auto;
+    box-shadow: 0 -20px 50px rgba(0,0,0,0.7);
+  }
+  .map-tooltip.active { transform: translateY(0); }
+  .tooltip-close { display: block; }
 }
 
 /* =========================================================

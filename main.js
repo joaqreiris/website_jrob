@@ -310,13 +310,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "about.pullquote": '"Alejarse del reduccionismo para adentrarse en el terreno de la complejidad. Adaptarse a la imprevisibilidad constante y construir desde el caos."',
             "about.act3_title": "Construir identidad y cultura de equipo.",
             "about.act3_intro": "Hoy mi foco está en lo que ningún test mide: la identidad y la cultura de un equipo. Construir un grupo que se adapta, que se anticipa y en el que cada jugador encuentra un rol con sentido. Estos son los principios que intento dejar instalados allí donde trabajo:",
-            "about.principle1": '<span class="principle-k">Equipo camaleónico</span> Desarrollar la capacidad de adaptarse al cambio constante.',
-            "about.principle2": '<span class="principle-k">Proactivo y reactivo</span> Entender que el equipo evoluciona siempre y anticiparse a los hechos.',
-            "about.principle3": '<span class="principle-k">Preparados para (casi) todo</span> Entrenar cuerpo y mente para los escenarios posibles de la competición.',
-            "about.principle4": '<span class="principle-k">Cultura de trabajo</span> Sostener una labor constante, por el bien común y el propio.',
-            "about.principle5": '<span class="principle-k">Objetivos claros y tangibles</span> Encontrar motivos que unan la causa colectiva y la individual.',
-            "about.principle6": '<span class="principle-k">Asunción de roles</span> Que cada uno halle su forma de aportar y se sienta importante.',
-            "about.values_line": "Humildad · Resiliencia · Perseverancia · Empatía · Sinergia",
+            "about.principle1": '<span class="principle-k">Equipo camaleónico</span> — adaptarse al cambio constante.',
+            "about.principle2": '<span class="principle-k">Proactivo y reactivo</span> — anticiparse a los hechos, no solo reaccionar.',
+            "about.principle3": '<span class="principle-k">Preparados para (casi) todo</span> — cuerpo y mente listos para cada escenario.',
+            "about.principle4": '<span class="principle-k">Cultura de trabajo</span> — esfuerzo constante, por el bien común y el propio.',
+            "about.principle5": '<span class="principle-k">Objetivos claros</span> — motivos que unan lo colectivo y lo individual.',
+            "about.principle6": '<span class="principle-k">Asunción de roles</span> — que cada uno aporte y se sienta importante.',
             "about.bio_cta": "Disponible para staffs técnicos, consultorías de big data en fútbol y para construir departamentos de rendimiento desde cero.",
             "clubs.subtitle": "Confianza",
             "clubs.title": "Clubes en los que <span>he trabajado</span>",
@@ -340,8 +339,9 @@ document.addEventListener("DOMContentLoaded", () => {
             "academic.desc1": "Profundización en la metodología del Entrenamiento Estructurado de Francisco Seirul·lo. Optimización del deportista como sistema complejo. 2019–2021.",
             "academic.deg2": "Máster en Big Data Aplicado al Entrenamiento en Fútbol",
             "academic.desc2": "Universidad Católica de Murcia (UCAM). Analítica avanzada para la toma de decisiones basada en evidencia y rendimiento real. 2022–2023.",
-            "academic.deg3": "Licenciatura Ed. Física · Licencia A CONMEBOL · EXOS · ISAK · NSCA",
-            "academic.desc3": "Licenciatura en el IUACJ (Uruguay) + licencia de entrenador A de CONMEBOL. Certificaciones EXOS Performance Specialist e ISAK Antropometría; NSCA CSCS en curso.",
+            "academic.kicker3": "Formación de base",
+            "academic.deg3": "Licenciatura en Educación Física · Licencia A CONMEBOL",
+            "academic.desc3": "Licenciado en Educación Física y Deportes (IUACJ, Uruguay) y entrenador con Licencia A CONMEBOL: formación específica en fútbol, no solo en preparación física.",
             "methods.desc": "No fragmentamos al deportista. Entrenamos estructuras que interactúan simultáneamente — sin compartimentar lo físico, lo cognitivo y lo socio-afectivo.",
             "methods.center": "Humano<br>Deportista",
             "quote.text": "El análisis de datos no sustituye al ojo del entrenador — lo complementa, para tomar decisiones con evidencia.",
@@ -476,13 +476,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "about.pullquote": '"Move away from reductionism to step into the terrain of complexity. Adapt to constant unpredictability and build from chaos."',
             "about.act3_title": "Building team identity and culture.",
             "about.act3_intro": "Today my focus is on what no test measures: the identity and culture of a team. Building a group that adapts, that anticipates, and in which every player finds a meaningful role. These are the principles I try to leave in place wherever I work:",
-            "about.principle1": '<span class="principle-k">Chameleon team</span> Developing the capacity to adapt to constant change.',
-            "about.principle2": '<span class="principle-k">Proactive and reactive</span> Understanding that the team is always evolving and getting ahead of events.',
-            "about.principle3": '<span class="principle-k">Ready for (almost) anything</span> Training body and mind for the possible scenarios of competition.',
-            "about.principle4": '<span class="principle-k">Work culture</span> Sustaining constant effort, for the common good and one\'s own.',
-            "about.principle5": '<span class="principle-k">Clear, tangible goals</span> Finding reasons that unite the collective and the individual cause.',
-            "about.principle6": '<span class="principle-k">Owning roles</span> So everyone finds their way to contribute and feels important.',
-            "about.values_line": "Humility · Resilience · Perseverance · Empathy · Synergy",
+            "about.principle1": '<span class="principle-k">Chameleon team</span> — adapting to constant change.',
+            "about.principle2": '<span class="principle-k">Proactive and reactive</span> — getting ahead of events, not just reacting.',
+            "about.principle3": '<span class="principle-k">Ready for (almost) anything</span> — body and mind ready for every scenario.',
+            "about.principle4": '<span class="principle-k">Work culture</span> — constant effort, for the common good and one\'s own.',
+            "about.principle5": '<span class="principle-k">Clear goals</span> — reasons that unite the collective and the individual.',
+            "about.principle6": '<span class="principle-k">Owning roles</span> — everyone contributes and feels important.',
             "about.bio_cta": "Available for coaching staffs, football big-data consultancy and building performance departments from scratch.",
             "clubs.subtitle": "Trust",
             "clubs.title": "Clubs where I have <span>worked</span>",
@@ -506,8 +505,9 @@ document.addEventListener("DOMContentLoaded", () => {
             "academic.desc1": "In-depth study of Francisco Seirul·lo's Structured Training methodology. Optimization of the athlete as a complex system. 2019–2021.",
             "academic.deg2": "Master's in Big Data Applied to Football Training",
             "academic.desc2": "Catholic University of Murcia (UCAM). Advanced analytics for decision-making based on evidence and real performance. 2022–2023.",
-            "academic.deg3": "BSc Physical Education · CONMEBOL A License · EXOS · ISAK · NSCA",
-            "academic.desc3": "BSc at IUACJ (Uruguay) + CONMEBOL A coaching license. EXOS Performance Specialist and ISAK Anthropometry certifications; NSCA CSCS in progress.",
+            "academic.kicker3": "Foundational education",
+            "academic.deg3": "BSc in Physical Education · CONMEBOL A License",
+            "academic.desc3": "Degree in Physical Education and Sports (IUACJ, Uruguay) and coach with a CONMEBOL A License: specific training in football, not only in physical preparation.",
             "methods.desc": "We don't fragment the athlete. We train structures that interact simultaneously — without compartmentalizing the physical, the cognitive and the socio-affective.",
             "methods.center": "Human<br>Athlete",
             "quote.text": "Data analysis doesn't replace the coach's eye — it complements it, to make decisions with evidence.",
@@ -642,13 +642,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "about.pullquote": '"Afastar-se do reducionismo para adentrar o terreno da complexidade. Adaptar-se à imprevisibilidade constante e construir a partir do caos."',
             "about.act3_title": "Construir identidade e cultura de equipe.",
             "about.act3_intro": "Hoje meu foco está no que nenhum teste mede: a identidade e a cultura de uma equipe. Construir um grupo que se adapta, que se antecipa e no qual cada jogador encontra um papel com sentido. Estes são os princípios que procuro deixar instalados onde quer que eu trabalhe:",
-            "about.principle1": '<span class="principle-k">Equipe camaleônica</span> Desenvolver a capacidade de adaptar-se à mudança constante.',
-            "about.principle2": '<span class="principle-k">Proativo e reativo</span> Entender que a equipe evolui sempre e antecipar-se aos fatos.',
-            "about.principle3": '<span class="principle-k">Preparados para (quase) tudo</span> Treinar corpo e mente para os cenários possíveis da competição.',
-            "about.principle4": '<span class="principle-k">Cultura de trabalho</span> Sustentar um trabalho constante, pelo bem comum e o próprio.',
-            "about.principle5": '<span class="principle-k">Objetivos claros e tangíveis</span> Encontrar motivos que unam a causa coletiva e a individual.',
-            "about.principle6": '<span class="principle-k">Assunção de papéis</span> Que cada um encontre sua forma de contribuir e se sinta importante.',
-            "about.values_line": "Humildade · Resiliência · Perseverança · Empatia · Sinergia",
+            "about.principle1": '<span class="principle-k">Equipe camaleônica</span> — adaptar-se à mudança constante.',
+            "about.principle2": '<span class="principle-k">Proativo e reativo</span> — antecipar-se aos fatos, não só reagir.',
+            "about.principle3": '<span class="principle-k">Preparados para (quase) tudo</span> — corpo e mente prontos para cada cenário.',
+            "about.principle4": '<span class="principle-k">Cultura de trabalho</span> — esforço constante, pelo bem comum e o próprio.',
+            "about.principle5": '<span class="principle-k">Objetivos claros</span> — motivos que unam o coletivo e o individual.',
+            "about.principle6": '<span class="principle-k">Assunção de papéis</span> — que cada um contribua e se sinta importante.',
             "about.bio_cta": "Disponível para comissões técnicas, consultorias de big data no futebol e para construir departamentos de rendimento do zero.",
             "clubs.subtitle": "Confiança",
             "clubs.title": "Clubes onde <span>trabalhei</span>",
@@ -672,8 +671,9 @@ document.addEventListener("DOMContentLoaded", () => {
             "academic.desc1": "Aprofundamento na metodologia do Treinamento Estruturado de Francisco Seirul·lo. Otimização do atleta como sistema complexo. 2019–2021.",
             "academic.deg2": "Mestrado em Big Data Aplicado ao Treinamento no Futebol",
             "academic.desc2": "Universidade Católica de Múrcia (UCAM). Analítica avançada para a tomada de decisões baseada em evidência e rendimento real. 2022–2023.",
-            "academic.deg3": "Licenciatura Ed. Física · Licença A CONMEBOL · EXOS · ISAK · NSCA",
-            "academic.desc3": "Licenciatura no IUACJ (Uruguai) + licença de treinador A da CONMEBOL. Certificações EXOS Performance Specialist e ISAK Antropometria; NSCA CSCS em andamento.",
+            "academic.kicker3": "Formação de base",
+            "academic.deg3": "Licenciatura em Educação Física · Licença A CONMEBOL",
+            "academic.desc3": "Licenciado em Educação Física e Esportes (IUACJ, Uruguai) e treinador com Licença A CONMEBOL: formação específica em futebol, não apenas em preparação física.",
             "methods.desc": "Não fragmentamos o atleta. Treinamos estruturas que interagem simultaneamente — sem compartimentar o físico, o cognitivo e o socioafetivo.",
             "methods.center": "Humano<br>Atleta",
             "quote.text": "A análise de dados não substitui o olho do treinador — o complementa, para tomar decisões com evidência.",
@@ -839,6 +839,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mapContainer = document.getElementById("world-map");
     const tooltip = document.getElementById("map-tooltip");
+    const isMobileMap = () => window.matchMedia("(max-width: 768px)").matches;
+
+    function hideMapTooltip() {
+        if (tooltip) tooltip.classList.remove("active");
+    }
+
+    // Móvil: cerrar el cuadro con la "x" o tocando fuera del cuadro / país
+    if (tooltip) {
+        tooltip.addEventListener("click", (e) => {
+            if (e.target.closest(".tooltip-close")) hideMapTooltip();
+        });
+        document.addEventListener("click", (e) => {
+            if (!isMobileMap()) return;
+            if (e.target.closest("#map-tooltip")) return;
+            if (e.target.closest(".active-country")) return;
+            hideMapTooltip();
+        });
+    }
 
     function initMap() {
         if (!mapContainer) return;
@@ -859,7 +877,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (experienceData[id]) {
                 newPath.classList.add("active-country");
                 
-                newPath.addEventListener("mouseenter", (e) => {
+                const showTooltip = () => {
                     const data = experienceData[id];
                     const langData = data[currentLang] || data["es"];
                     let logoHtml = "";
@@ -874,6 +892,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
 
                     tooltip.innerHTML = `
+                        <button class="tooltip-close" type="button" aria-label="Cerrar">&times;</button>
                         <div class="tooltip-header">
                             <div>
                                 <h4>${langData.country}</h4>
@@ -887,12 +906,17 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     `;
                     tooltip.classList.add("active");
-                });
+                    // En móvil el cuadro es una barra fija (CSS); limpiamos left/top inline
+                    if (isMobileMap()) { tooltip.style.left = ""; tooltip.style.top = ""; }
+                };
+
+                newPath.addEventListener("mouseenter", showTooltip);
 
                 newPath.addEventListener("mousemove", (e) => {
+                    if (isMobileMap()) return; // móvil: posición fija por CSS, no seguir el toque
                     const containerRect = mapContainer.getBoundingClientRect();
                     const tooltipRect = tooltip.getBoundingClientRect();
-                    
+
                     let left = e.clientX - containerRect.left + 20;
                     let top = e.clientY - containerRect.top + 20;
 
@@ -908,7 +932,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 newPath.addEventListener("mouseleave", () => {
-                    tooltip.classList.remove("active");
+                    if (isMobileMap()) return; // móvil: se cierra con la "x" o tocando fuera
+                    hideMapTooltip();
+                });
+
+                // Táctil: el tap dispara "click" de forma fiable
+                newPath.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    showTooltip();
                 });
             }
             svg.appendChild(newPath);
