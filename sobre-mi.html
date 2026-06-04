@@ -158,7 +158,10 @@
     </section>
 
     <!-- ============================== AVALES — WALL EDITORIAL ============================== -->
-    <section id="testimonials" class="endorsements">
+    <!-- Avales ocultos por ahora. Para activar una reseña, quitá el atributo `hidden`
+         de su <article class="endorsement">. La sección aparece sola cuando hay al
+         menos una reseña visible (ver script "avales" al final del archivo). -->
+    <section id="testimonials" class="endorsements" hidden>
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle" data-i18n="testi.subtitle">Avales</span>
@@ -167,7 +170,7 @@
 
             <div class="endorsements-list">
 
-                <article class="endorsement" data-aos="fade-up">
+                <article class="endorsement" data-aos="fade-up" hidden>
                     <span class="endorsement-num">01</span>
                     <blockquote class="endorsement-quote" data-i18n="testi.pirlo.quote">
                         Joaquín ha demostrado una capacidad excepcional para gestionar el rendimiento en el fútbol de élite. Su visión integral y su rigor metodológico son claves para el éxito de cualquier proyecto técnico.
@@ -182,7 +185,7 @@
                     </footer>
                 </article>
 
-                <article class="endorsement" data-aos="fade-up">
+                <article class="endorsement" data-aos="fade-up" hidden>
                     <span class="endorsement-num">02</span>
                     <blockquote class="endorsement-quote" data-i18n="testi.tous.quote">
                         Uno de los profesionales con mayor proyección en la integración de la fuerza aplicada al fútbol. Su capacidad para combinar la evidencia científica con las necesidades reales del campo lo sitúa en la vanguardia.
@@ -197,7 +200,7 @@
                     </footer>
                 </article>
 
-                <article class="endorsement" data-aos="fade-up">
+                <article class="endorsement" data-aos="fade-up" hidden>
                     <span class="endorsement-num">03</span>
                     <blockquote class="endorsement-quote" data-i18n="testi.debellis.quote">
                         Su metodología estructurada y su enfoque en la complejidad del deportista lo convierten en un activo invaluable para cualquier staff técnico de primer nivel.
@@ -212,7 +215,7 @@
                     </footer>
                 </article>
 
-                <article class="endorsement" data-aos="fade-up">
+                <article class="endorsement" data-aos="fade-up" hidden>
                     <span class="endorsement-num">04</span>
                     <blockquote class="endorsement-quote" data-i18n="testi.lazaro.quote">
                         Uno de los profesionales más meticulosos con los que he colaborado. Su capacidad para unir el área médica con el rendimiento en campo es fundamental para el éxito competitivo.
@@ -325,5 +328,16 @@
       });
     </script>
     <script src="main.js"></script>
+    <!-- avales: muestra la sección solo si hay al menos una reseña visible -->
+    <script>
+      (function(){
+        const section = document.getElementById('testimonials');
+        if(!section) return;
+        if(section.querySelector('.endorsement:not([hidden])')){
+          section.hidden = false;
+          if(window.AOS && AOS.refreshHard) AOS.refreshHard();
+        }
+      })();
+    </script>
 </body>
 </html>
