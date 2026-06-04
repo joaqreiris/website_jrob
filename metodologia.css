@@ -1,0 +1,767 @@
+/* =========================================================
+   METODOLOGÍA — Cómo trabajo
+   Estilos propios de la página. Usa los tokens de redesign.css
+   (NO redefine la paleta — sólo compone con ella).
+   ========================================================= */
+
+/* ---- Hero propio de metodología ---- */
+.met-hero {
+  position: relative;
+  min-height: 86vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 9rem 0 4.5rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.met-hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: url('assets/fotos/1T3A6444.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  filter: grayscale(1) contrast(1.12) brightness(0.62);
+  z-index: 0;
+}
+.met-hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.78) 55%, rgba(8,9,12,0.97) 100%),
+    radial-gradient(120% 90% at 12% 110%, rgba(255,92,58,0.16) 0%, transparent 55%);
+  z-index: 0;
+}
+.met-hero .container { position: relative; z-index: 1; width: 100%; }
+
+.met-kicker {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-bottom: 1.6rem;
+}
+.met-kicker::before {
+  content: ""; width: 26px; height: 1px; background: var(--primary);
+}
+
+.met-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  max-width: 16ch;
+  margin: 0;
+  text-wrap: balance;
+}
+.met-hero h1 em {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary-2);
+  letter-spacing: -0.01em;
+}
+.met-lede {
+  margin-top: 2rem;
+  max-width: 52ch;
+  font-size: 1.12rem;
+  line-height: 1.65;
+  color: var(--text-2);
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line-2);
+}
+.met-lede strong { color: var(--text); font-weight: 600; }
+
+/* small index row under lede */
+.met-index {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 0.5rem;
+  margin-top: 2.5rem;
+}
+.met-index a {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.025);
+  transition: all .2s ease;
+}
+.met-index a:hover { color: var(--text); border-color: var(--text-3); background: rgba(255,255,255,0.06); }
+.met-index a span { color: var(--primary); margin-right: 7px; }
+
+/* ---- Section scaffolding ---- */
+.met-section { padding: 7rem 0; position: relative; }
+.met-section.alt { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+.met-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 1rem;
+}
+.met-eyebrow .num { color: var(--primary); }
+.met-eyebrow::after { content:""; width: 40px; height: 1px; background: var(--line-2); }
+
+.met-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+.met-h2 em {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary-2);
+}
+.met-intro {
+  color: var(--text-2);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  max-width: 60ch;
+  margin: 0 0 3rem;
+}
+.met-intro strong { color: var(--text); font-weight: 600; }
+
+/* =========================================================
+   1 · PARADIGMA — dos miradas enfrentadas
+   ========================================================= */
+.paradigm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
+.paradigm-col { padding: 2.75rem 2.5rem 3rem; background: var(--surface); }
+.paradigm-col.old { background: var(--bg-2); }
+.paradigm-col.mine { background: linear-gradient(180deg, rgba(255,92,58,0.07), var(--surface)); border-left: 1px solid var(--line); }
+.paradigm-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 0.75rem;
+}
+.paradigm-col.mine .paradigm-tag { color: var(--primary); }
+.paradigm-col h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+.paradigm-list { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+.paradigm-list li {
+  display: flex; gap: 0.85rem; align-items: flex-start;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.paradigm-list li::before {
+  content: "—";
+  color: var(--text-3);
+  flex: none;
+  font-family: var(--font-mono);
+}
+.paradigm-col.mine .paradigm-list li { color: var(--text); }
+.paradigm-col.mine .paradigm-list li::before { content: "+"; color: var(--primary); font-weight: 600; }
+.paradigm-words {
+  margin-top: 1.75rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  line-height: 1.9;
+}
+.paradigm-col.mine .paradigm-words { color: var(--primary-2); border-top-color: rgba(255,92,58,0.25); }
+.paradigm-src {
+  margin-top: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  max-width: 64ch;
+}
+
+/* =========================================================
+   2 · SISTEMA (holistic circle) — heredado de redesign.css
+   sólo ajustes finos de contenedor en esta página
+   ========================================================= */
+.met-system .structures-container { margin-top: 2rem; }
+
+/* =========================================================
+   3 · OPERATIVA — dónde se entrena (campo / gym / recuperación)
+   ========================================================= */
+.engines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.engine {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2.25rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  transition: border-color .3s ease, transform .3s ease, background .3s ease;
+}
+.engine:hover { border-color: var(--line-2); transform: translateY(-3px); background: var(--surface-2); }
+.engine.lead { border-color: rgba(255,92,58,0.35); background: linear-gradient(180deg, rgba(255,92,58,0.06), var(--surface)); }
+.engine-idx {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1.5rem;
+}
+.engine-idx .where { color: var(--primary); }
+.engine h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  line-height: 1.12;
+}
+.engine .role {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 1rem;
+}
+.engine p { color: var(--text-2); font-size: 0.96rem; line-height: 1.6; margin: 0; }
+.engine .engine-foot {
+  margin-top: auto; padding-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border-top: 1px solid var(--line);
+}
+.engine.lead .engine-foot { border-top-color: rgba(255,92,58,0.22); }
+
+/* =========================================================
+   4 · MICROCICLO — la semana tipo (pieza central)
+   ========================================================= */
+.cycle-wrap {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+}
+.cycle-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+  padding: 1.4rem 1.75rem;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.cycle-head .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--primary); }
+.cycle-head .spacer { flex: 1; }
+.cycle-legend { display: flex; gap: 1.25rem; }
+.cycle-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.cycle-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.lg-low  { background: var(--surface-2); border: 1px solid var(--line-2); }
+.lg-mid  { background: var(--primary-soft); border: 1px solid var(--primary-d); }
+.lg-high { background: var(--primary); }
+.lg-match{ background: var(--data); }
+
+/* grid of days */
+.cycle-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.cycle-day {
+  position: relative;
+  border-right: 1px solid var(--line);
+  padding: 1.25rem 0.9rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  transition: background .25s ease;
+}
+.cycle-day:last-child { border-right: 0; }
+.cycle-day:hover { background: var(--surface-2); }
+.cycle-day.is-match { background: linear-gradient(180deg, rgba(255,229,194,0.07), transparent); }
+
+.cd-day {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-bottom: 0.2rem;
+}
+.cd-md {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+  margin-bottom: 1rem;
+}
+.cycle-day.is-match .cd-md { color: var(--data); }
+
+/* the load column (bottom-anchored bar) */
+.cd-bar-wrap {
+  margin-top: auto;
+  height: 168px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.cd-bar {
+  width: 100%;
+  border-radius: 4px 4px 2px 2px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  position: relative;
+  min-height: 14px;
+  transition: filter .25s ease;
+}
+.cd-bar.mid  { background: linear-gradient(180deg, var(--primary), var(--primary-d)); border-color: var(--primary-d); opacity: 0.55; }
+.cd-bar.high { background: linear-gradient(180deg, var(--primary-2), var(--primary-d)); border-color: var(--primary); }
+.cd-bar.match{ background: linear-gradient(180deg, var(--data), #E9B57A); border-color: var(--data); }
+.cd-bar .pct {
+  position: absolute; top: -1.4rem; left: 0; right: 0;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+}
+.cycle-day.is-match .cd-bar .pct { color: var(--data); }
+
+.cd-orient {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+  line-height: 1.15;
+}
+.cycle-day.is-match .cd-orient { color: var(--data); }
+.cd-note {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--text-3);
+}
+.cd-ssp {
+  margin-top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line);
+}
+.cd-ssp b { color: var(--primary); font-weight: 600; }
+
+.cycle-foot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.cycle-foot .cf {
+  padding: 1.5rem 1.75rem;
+  border-right: 1px solid var(--line);
+}
+.cycle-foot .cf:last-child { border-right: 0; }
+.cycle-foot .cf h4 {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.cycle-foot .cf p { font-size: 0.9rem; line-height: 1.55; color: var(--text-2); margin: 0; }
+
+/* recovery rail — recuperación post-partido dentro del microciclo */
+.cycle-recovery {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-top: 1px solid var(--line);
+  background: var(--bg-2);
+}
+.cr-label {
+  padding: 1.5rem 1.75rem;
+  border-right: 1px solid var(--line);
+  display: flex; flex-direction: column; justify-content: center; gap: 0.4rem;
+}
+.cr-label .cr-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.cr-label b {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  line-height: 1.15;
+}
+.cr-steps { display: grid; grid-template-columns: repeat(3, 1fr); }
+.cr-step {
+  padding: 1.5rem 1.5rem 1.6rem;
+  border-right: 1px solid var(--line);
+}
+.cr-step:last-child { border-right: 0; }
+.cr-step .cr-when {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  display: flex; align-items: center; gap: 7px;
+  margin-bottom: 0.6rem;
+}
+.cr-step .cr-when::before { content:""; width: 6px; height: 6px; border-radius: 50%; background: var(--primary); opacity: 0.8; }
+.cr-step h5 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  line-height: 1.15;
+}
+.cr-step p { font-size: 0.82rem; line-height: 1.5; color: var(--text-2); margin: 0; }
+
+/* =========================================================
+   5 · SSP — la escalera de tareas
+   ========================================================= */
+.ladder {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  align-items: end;
+}
+.rung {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem 1.6rem;
+  position: relative;
+  transition: border-color .3s ease, transform .3s ease, background .3s ease;
+}
+.rung:hover { border-color: var(--line-2); transform: translateY(-3px); background: var(--surface-2); }
+.rung .rn {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  margin-bottom: 0.9rem;
+}
+.rung h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+.rung p { font-size: 0.84rem; line-height: 1.5; color: var(--text-2); margin: 0; }
+.rung .meter { height: 3px; border-radius: 999px; background: var(--line-2); margin-bottom: 1.1rem; overflow: hidden; }
+.rung .meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-2)); }
+.rung:nth-child(1) .meter span { width: 20%; }
+.rung:nth-child(2) .meter span { width: 40%; }
+.rung:nth-child(3) .meter span { width: 62%; }
+.rung:nth-child(4) .meter span { width: 84%; }
+.rung:nth-child(5) .meter span { width: 100%; }
+.rung:nth-child(5) { border-color: rgba(255,92,58,0.4); background: linear-gradient(180deg, rgba(255,92,58,0.06), var(--surface)); }
+.ladder-axis {
+  display: flex; justify-content: space-between;
+  margin-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.ladder-axis span:last-child { color: var(--primary); }
+
+/* =========================================================
+   6 · DOS EJEMPLOS — campo + gimnasio
+   ========================================================= */
+.examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.ex {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+}
+.ex-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.ex-head .where { color: var(--primary); }
+.ex-head .tag { color: var(--text-3); }
+
+/* mini pitch / gym diagram */
+.ex-canvas {
+  position: relative;
+  height: 220px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 38px, rgba(255,255,255,0.018) 38px 39px),
+    var(--bg-2);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.pitch {
+  position: absolute; inset: 22px;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+}
+.pitch::before { /* halfway line */
+  content:""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line-2);
+}
+.pitch::after { /* center circle */
+  content:""; position: absolute; left: 50%; top: 50%; width: 56px; height: 56px;
+  border: 1px solid var(--line-2); border-radius: 50%; transform: translate(-50%,-50%);
+}
+.grid-zone {
+  position: absolute;
+  border: 1px dashed rgba(255,92,58,0.55);
+  border-radius: 3px;
+  background: rgba(255,92,58,0.06);
+}
+.token {
+  position: absolute; width: 13px; height: 13px; border-radius: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.token.t { background: var(--primary); }
+.token.o { background: var(--text-2); }
+.token.ball { width: 8px; height: 8px; background: var(--data); }
+.token .lbl {
+  position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-mono); font-size: 0.52rem; color: var(--text-3); white-space: nowrap;
+}
+.arrow {
+  position: absolute; height: 1px; background: rgba(255,229,194,0.55);
+  transform-origin: left center;
+}
+.arrow::after {
+  content:""; position: absolute; right: -1px; top: -2px;
+  border-left: 5px solid rgba(255,229,194,0.7);
+  border-top: 2.5px solid transparent; border-bottom: 2.5px solid transparent;
+}
+
+/* gym diagram — vectors / planes */
+.planes { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 26px; }
+.plane-fig {
+  width: 2px; height: 96px; background: var(--line-2); position: relative; border-radius: 2px;
+}
+.plane-fig span {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  width: 0; height: 0;
+}
+.vec {
+  position: absolute; width: 64px; height: 1px; background: var(--primary);
+  left: 50%; top: 50%; transform-origin: left center;
+}
+.vec::after { content:""; position:absolute; right:-1px; top:-3px; border-left:6px solid var(--primary); border-top:3px solid transparent; border-bottom:3px solid transparent; }
+
+.ex-body { padding: 1.6rem 1.6rem 1.8rem; flex: 1; display: flex; flex-direction: column; }
+.ex-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+  line-height: 1.12;
+}
+.ex-body > p { color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin: 0 0 1.4rem; }
+.ex-rows { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); margin-top: auto; }
+.ex-row {
+  display: grid; grid-template-columns: 92px 1fr; gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.ex-row:last-child { border-bottom: 0; }
+.ex-row dt {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.ex-row dd { font-size: 0.9rem; line-height: 1.5; color: var(--text); margin: 0; }
+.ex-row dd .chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-2);
+  border: 1px solid rgba(255,92,58,0.3);
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin: 0 4px 4px 0;
+}
+
+/* =========================================================
+   7 · DÍA A DÍA — bucle de decisión
+   ========================================================= */
+.loop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.loop-step {
+  padding: 2.25rem 1.75rem 2.5rem;
+  border-right: 1px solid var(--line);
+  position: relative;
+  background: var(--surface);
+  transition: background .25s ease;
+}
+.loop-step:last-child { border-right: 0; }
+.loop-step:hover { background: var(--surface-2); }
+.loop-step .ls-n {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.loop-step .ls-n::after { content:""; flex:1; height:1px; background: var(--line); }
+.loop-step h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.6rem;
+}
+.loop-step p { font-size: 0.9rem; line-height: 1.55; color: var(--text-2); margin: 0; }
+.loop-step .arrow-next {
+  position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+  width: 16px; height: 16px; z-index: 2;
+  color: var(--text-3); font-size: 0.9rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.loop-note {
+  margin-top: 2.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--text);
+  max-width: 30ch;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--primary);
+}
+.loop-note em { font-family: "Instrument Serif", serif; font-style: italic; color: var(--primary-2); }
+
+/* =========================================================
+   CIERRE
+   ========================================================= */
+.met-close {
+  padding: 7rem 0 8rem;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(90% 120% at 50% 0%, rgba(255,92,58,0.08) 0%, transparent 55%),
+    var(--bg);
+}
+.met-close h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  max-width: 18ch;
+  margin: 0 auto 2rem;
+  text-wrap: balance;
+}
+.met-close h2 em { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; color: var(--primary-2); }
+.met-close .cta-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 980px) {
+  .paradigm { grid-template-columns: 1fr; }
+  .paradigm-col.mine { border-left: 0; border-top: 1px solid var(--line); }
+  .engines { grid-template-columns: 1fr; }
+  .ladder { grid-template-columns: repeat(2, 1fr); }
+  .examples { grid-template-columns: 1fr; }
+  .loop { grid-template-columns: 1fr 1fr; }
+  .loop-step:nth-child(2) { border-right: 0; }
+  .loop-step:nth-child(1), .loop-step:nth-child(2) { border-bottom: 1px solid var(--line); }
+  .cycle-grid { grid-template-columns: repeat(4, 1fr); }
+  .cycle-day:nth-child(4n) { border-right: 0; }
+  .cycle-day { border-bottom: 1px solid var(--line); min-height: 320px; }
+  .cycle-foot { grid-template-columns: 1fr; }
+  .cycle-foot .cf { border-right: 0; border-bottom: 1px solid var(--line); }
+  .cycle-foot .cf:last-child { border-bottom: 0; }
+  .cycle-recovery { grid-template-columns: 1fr; }
+  .cr-label { border-right: 0; border-bottom: 1px solid var(--line); flex-direction: row; align-items: baseline; gap: 0.75rem; }
+}
+@media (max-width: 560px) {
+  .met-section { padding: 5rem 0; }
+  .ladder { grid-template-columns: 1fr; }
+  .loop { grid-template-columns: 1fr; }
+  .loop-step { border-right: 0; border-bottom: 1px solid var(--line); }
+  .loop-step:last-child { border-bottom: 0; }
+  .cycle-grid { grid-template-columns: repeat(2, 1fr); }
+  .cycle-day:nth-child(2n) { border-right: 0; }
+  .cycle-legend { flex-wrap: wrap; gap: 0.6rem 1rem; }
+  .cr-steps { grid-template-columns: 1fr; }
+  .cr-step { border-right: 0; border-bottom: 1px solid var(--line); }
+  .cr-step:last-child { border-bottom: 0; }
+}
