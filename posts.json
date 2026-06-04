@@ -1,5 +1,49 @@
 [
   {
+    "id": "united-departamento-rendimiento",
+    "image": "assets/fotos/IMG_6012.JPG",
+    "date": { "es": "Jun 2026", "en": "Jun 2026", "pt": "Jun 2026" },
+    "title": {
+      "es": "United FC: construir un departamento de rendimiento desde la base",
+      "en": "United FC: building a performance department from the ground up",
+      "pt": "United FC: construir um departamento de rendimento desde a base"
+    },
+    "excerpt": {
+      "es": "Un club recién ascendido, estructuras por construir y una ventana para empezar desde la base. Lo que dejó mi paso por United FC no fue un resultado, sino unos cimientos: cómo se arma, poco a poco, el departamento de rendimiento de un club profesional.",
+      "en": "A recently promoted club, structures still to be built, and a window to start from the ground up. What my time at United FC left behind wasn't a result but a foundation: how a professional club's performance department is built, little by little.",
+      "pt": "Um clube recém-promovido, estruturas por construir e uma janela para começar desde a base. O que meu período no United FC deixou não foi um resultado, e sim alicerces: como se monta, aos poucos, o departamento de rendimento de um clube profissional."
+    },
+    "body": {
+      "es": [
+        "United fue, desde el primer día, un desafío completo. Un club que venía de ascender desde una categoría inferior, en un país donde las estructuras del fútbol profesional todavía se están construyendo, sobre todo en las divisiones de abajo. Esa combinación —ambición y estructura aún por definir— abría una ventana poco común: la de poder construir algo desde la base.",
+        "Mi función era triple: desarrollar el área de fuerza y acondicionamiento del primer equipo, gestionar los datos de GPS y colaborar con el departamento de rendimiento para darle forma. Sobre el papel era un rol acotado; en la práctica, al llegar quedó claro que había mucho trabajo de cimientos por delante antes de poder hablar de optimización.",
+        "La prioridad no fueron los detalles, sino las conexiones. Un club profesional funciona cuando sus áreas —cuerpo técnico, servicios médicos, rendimiento, nutrición— hablan el mismo idioma y comparten información. Buena parte del trabajo inicial consistió en tender esos puentes y en definir el departamento de rendimiento como el espacio que articula todo lo relacionado con el bienestar y el desarrollo del jugador.",
+        "A partir de ahí, fue cuestión de instalar procesos que parecen simples pero que sostienen al resto. Protocolos para el ingreso de un jugador nuevo desde los servicios médicos, evaluaciones iniciales, una puesta a punto individual antes de sumarse al grupo. Y, en el día a día, planes individuales: corrección de asimetrías, mejora en la producción de fuerza, trabajo complementario y el cuidado de la llamada preparación invisible —descanso, hábitos, nutrición—.",
+        "Nada de eso era espectacular por separado. Pero eran justamente las piezas que faltaban, y son las que terminan marcando la diferencia entre un club que compite y uno que además se sostiene en el tiempo. Se fueron construyendo poco a poco, con la idea de que quedaran instaladas más allá de las personas.",
+        "El proyecto deportivo estaba conducido por Andrea Pirlo como entrenador. Trabajar dentro de un proyecto guiado por un entrenador de ese recorrido elevó el estándar y ayudó a ordenar prioridades: el trabajo de rendimiento se pone al servicio de una idea de juego, no al revés.",
+        "Mirando atrás, United fue una de esas experiencias en las que el valor no estuvo en un resultado puntual, sino en haber ayudado a dejar unas bases. Construir desde abajo enseña algo que después cuesta encontrar: que gran parte del rendimiento profesional no se ve, y que empieza mucho antes del partido —en los procesos, en las conexiones y en los pequeños protocolos que sostienen al jugador."
+      ],
+      "en": [
+        "From day one, United was a complete challenge. A club that had just come up from a lower division, in a country where professional football structures are still being built —especially in the lower tiers. That mix —ambition alongside structures still to be defined— opened an uncommon window: the chance to build something from the ground up.",
+        "My role was threefold: to develop the first team's strength and conditioning, manage the GPS data, and work with the performance department to give it shape. On paper it was a contained role; in practice, it was clear on arrival that there was a lot of groundwork to lay before talking about optimization.",
+        "The priority wasn't the details but the connections. A professional club works when its areas —coaching staff, medical services, performance, nutrition— speak the same language and share information. Much of the early work was about building those bridges and defining the performance department as the space that brings together everything related to the player's wellbeing and development.",
+        "From there, it was a matter of putting in place processes that look simple but hold up everything else. Protocols for bringing in a new signing from the medical services, baseline assessments, an individual ramp-up before joining the group. And, day to day, individual plans: correcting asymmetries, improving force production, complementary work, and looking after what's known as invisible preparation —rest, habits, nutrition.",
+        "None of that was spectacular on its own. But these were exactly the missing pieces, and they're what ends up separating a club that competes from one that also sustains itself over time. They were built little by little, with the idea that they would stay in place beyond any individual.",
+        "The sporting project was led by Andrea Pirlo as head coach. Working within a project run by a coach of that background raised the standard and helped order priorities: performance work is put at the service of an idea of play, not the other way around.",
+        "Looking back, United was one of those experiences where the value wasn't in a single result but in having helped leave some foundations behind. Building from the bottom up teaches something that's hard to find later: that a large part of professional performance is invisible, and that it begins long before the match —in the processes, the connections and the small protocols that support the player."
+      ],
+      "pt": [
+        "Desde o primeiro dia, o United foi um desafio completo. Um clube que vinha de subir de uma divisão inferior, em um país onde as estruturas do futebol profissional ainda estão sendo construídas —sobretudo nas divisões de baixo. Essa combinação —ambição com estruturas ainda por definir— abria uma janela pouco comum: a de poder construir algo desde a base.",
+        "Minha função era tripla: desenvolver a preparação física do time principal, gerir os dados de GPS e colaborar com o departamento de rendimento para lhe dar forma. No papel era um papel restrito; na prática, ao chegar ficou claro que havia muito trabalho de alicerce pela frente antes de falar em otimização.",
+        "A prioridade não foram os detalhes, e sim as conexões. Um clube profissional funciona quando suas áreas —comissão técnica, serviços médicos, rendimento, nutrição— falam a mesma língua e compartilham informação. Boa parte do trabalho inicial consistiu em construir essas pontes e em definir o departamento de rendimento como o espaço que articula tudo o que se relaciona com o bem-estar e o desenvolvimento do jogador.",
+        "A partir daí, foi questão de instalar processos que parecem simples mas que sustentam o resto. Protocolos para o ingresso de um novo reforço a partir dos serviços médicos, avaliações iniciais, uma colocação a ponto individual antes de se somar ao grupo. E, no dia a dia, planos individuais: correção de assimetrias, melhora na produção de força, trabalho complementar e o cuidado com a chamada preparação invisível —descanso, hábitos, nutrição—.",
+        "Nada disso era espetacular isoladamente. Mas eram justamente as peças que faltavam, e são as que acabam marcando a diferença entre um clube que compete e um que além disso se sustenta no tempo. Foram construídas aos poucos, com a ideia de que ficassem instaladas para além das pessoas.",
+        "O projeto esportivo era conduzido por Andrea Pirlo como treinador. Trabalhar dentro de um projeto guiado por um treinador com essa trajetória elevou o padrão e ajudou a ordenar prioridades: o trabalho de rendimento se coloca a serviço de uma ideia de jogo, não o contrário.",
+        "Olhando para trás, o United foi uma dessas experiências em que o valor não esteve em um resultado pontual, e sim em ter ajudado a deixar algumas bases. Construir de baixo para cima ensina algo que depois é difícil encontrar: que grande parte do rendimento profissional não se vê, e que começa muito antes da partida —nos processos, nas conexões e nos pequenos protocolos que sustentam o jogador."
+      ]
+    }
+  },
+  {
     "id": "deportista-hipercomplejo",
     "image": "assets/fotos/blog2.jpg",
     "date": { "es": "Jun 2026", "en": "Jun 2026", "pt": "Jun 2026" },
