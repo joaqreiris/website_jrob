@@ -147,9 +147,21 @@
   overflow: hidden;
   position: relative;
 }
-.paradigm-col { padding: 2.75rem 2.5rem 3rem; background: var(--surface); }
-.paradigm-col.old { background: var(--bg-2); }
-.paradigm-col.mine { background: linear-gradient(180deg, rgba(255,92,58,0.07), var(--surface)); border-left: 1px solid var(--line); }
+.paradigm-col { padding: 2.75rem 2.5rem 3rem; background: var(--surface); position: relative; }
+.paradigm-col.base  { background: linear-gradient(180deg, rgba(255,92,58,0.07), var(--surface)); }
+.paradigm-col.apoyo { background: var(--bg-2); border-left: 1px solid var(--line); }
+.paradigm-rank {
+  position: absolute; top: 1.6rem; right: 1.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+.paradigm-col.base .paradigm-rank { color: var(--primary); border-color: rgba(255,92,58,0.4); }
 .paradigm-tag {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -158,7 +170,7 @@
   color: var(--text-3);
   margin-bottom: 0.75rem;
 }
-.paradigm-col.mine .paradigm-tag { color: var(--primary); }
+.paradigm-col.base .paradigm-tag { color: var(--primary); }
 .paradigm-col h3 {
   font-family: var(--font-display);
   font-size: 1.45rem;
@@ -175,13 +187,14 @@
   color: var(--text-2);
 }
 .paradigm-list li::before {
-  content: "—";
+  content: "+";
   color: var(--text-3);
   flex: none;
   font-family: var(--font-mono);
+  font-weight: 600;
 }
-.paradigm-col.mine .paradigm-list li { color: var(--text); }
-.paradigm-col.mine .paradigm-list li::before { content: "+"; color: var(--primary); font-weight: 600; }
+.paradigm-col.base .paradigm-list li { color: var(--text); }
+.paradigm-col.base .paradigm-list li::before { color: var(--primary); }
 .paradigm-words {
   margin-top: 1.75rem; padding-top: 1.25rem;
   border-top: 1px solid var(--line);
@@ -192,7 +205,36 @@
   color: var(--text-3);
   line-height: 1.9;
 }
-.paradigm-col.mine .paradigm-words { color: var(--primary-2); border-top-color: rgba(255,92,58,0.25); }
+.paradigm-col.base .paradigm-words { color: var(--primary-2); border-top-color: rgba(255,92,58,0.25); }
+
+/* bridge callout — la relación base / apoyo */
+.paradigm-bridge {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255,92,58,0.05), var(--surface));
+  padding: 2.1rem 2.25rem;
+}
+.paradigm-bridge .pb-k {
+  font-family: var(--font-mono);
+  font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--primary);
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 0.9rem;
+}
+.paradigm-bridge .pb-k::before { content:""; width: 24px; height: 1px; background: var(--primary); }
+.paradigm-bridge p {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+  max-width: 72ch;
+}
+.paradigm-bridge p strong { color: var(--primary-2); font-weight: 600; }
+.paradigm-bridge p em { font-family: "Instrument Serif", serif; font-style: italic; color: var(--primary-2); }
 .paradigm-src {
   margin-top: 1.75rem;
   font-family: var(--font-mono);
@@ -736,7 +778,7 @@
    ========================================================= */
 @media (max-width: 980px) {
   .paradigm { grid-template-columns: 1fr; }
-  .paradigm-col.mine { border-left: 0; border-top: 1px solid var(--line); }
+  .paradigm-col.apoyo { border-left: 0; border-top: 1px solid var(--line); }
   .engines { grid-template-columns: 1fr; }
   .ladder { grid-template-columns: repeat(2, 1fr); }
   .examples { grid-template-columns: 1fr; }
