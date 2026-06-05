@@ -41,7 +41,7 @@ El sitio se publica desde el repo, así que sin push no hay deploy. (Trabajo en 
 
 ## Reglas de contenido
 
-- **Los datos son reales y vienen del CV** (UY/IT pasaporte, base Phnom Penh, 9 clubes).
+- **Los datos son reales y vienen del CV** (UY/IT pasaporte, base Camboya, 9 clubes).
   NO inventar métricas, fechas, porcentajes ni logros. Si falta un dato, preguntar.
 - **Trayectoria/clubes** (sobre-mi.html) son HTML estático. Al cambiar de club:
   actualizar `sobre-mi.html` (lista + marquee), los Casos de `index.html`,
@@ -99,5 +99,6 @@ El ES es la fuente de verdad del copy; EN y PT reflejan fielmente el ES.
 ## Contacto / datos clave del CV
 
 - Email: reiris.joaquin@gmail.com · Tel/WhatsApp: +971 50 150 5371
-- Base actual: Phnom Penh, Camboya · Pasaporte: Uruguay / Italia
+- Base actual: Camboya · Pasaporte: Uruguay / Italia
+  (la ciudad —Phnom Penh— se quitó del sitio a pedido; no volver a mostrarla)
 - Club actual: MOI Kompong Dewa FC (Premier League de Camboya), 2025–26
