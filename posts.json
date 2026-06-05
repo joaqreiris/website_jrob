@@ -259,7 +259,59 @@
         "O efeito prático aparecia nas reuniões com os demais departamentos. Em vez de discutir sobre impressões soltas, chegávamos com a informação integrada e sobre uma linha do tempo: as decisões sobre um jogador podiam ser tomadas de forma um pouco mais objetiva, com todas as cartas sobre a mesa.",
         "Essa é, para mim, a verdadeira utilidade dos dados: não decidir por nós, mas nos ajudar a decidir melhor. Trazer uma realidade objetiva a um esporte que, por natureza, continuará sendo subjetivo. O preparador físico moderno não precisa se apaixonar pela tecnologia, mas sim aprender a geri-la, simplificá-la e colocá-la a serviço de quem toma as decisões."
       ]
-    }
+    },
+    "figures": [
+      {
+        "src": "assets/figuras/flujo-de-datos-antes.png",
+        "after": 2,
+        "caption": {
+          "es": "El flujo de datos anterior: cada evaluación generaba un archivo de Excel suelto y la base de datos se construía a mano.",
+          "en": "The previous data flow: each assessment generated a separate Excel file and the database was built by hand.",
+          "pt": "O fluxo de dados anterior: cada avaliação gerava um arquivo de Excel solto e a base de dados era construída à mão."
+        },
+        "credit": "Material propio · etapa en Udinese"
+      },
+      {
+        "src": "assets/figuras/flujo-de-datos-despues.png",
+        "after": 3,
+        "caption": {
+          "es": "El mismo flujo tras automatizarlo con RStudio: recolección y análisis automáticos, almacenamiento en la nube y una visualización integrada para todo el staff.",
+          "en": "The same flow after automating it with RStudio: automatic collection and analysis, cloud storage and an integrated visualization for the whole staff.",
+          "pt": "O mesmo fluxo depois de automatizá-lo com RStudio: coleta e análise automáticas, armazenamento na nuvem e uma visualização integrada para todo o staff."
+        },
+        "credit": "Material propio · etapa en Udinese"
+      },
+      {
+        "src": "assets/figuras/tmg-filtrado.png",
+        "after": 6,
+        "caption": {
+          "es": "Filtrado: del archivo de Excel que devuelve cada tensiomiografía (TMG) a una base única de registros, depurada con un script en R y un z-score.",
+          "en": "Filtering: from the Excel file each tensiomyography (TMG) test returns to a single database of records, cleaned with an R script and a z-score.",
+          "pt": "Filtragem: do arquivo de Excel que cada tensiomiografia (TMG) devolve a uma base única de registros, depurada com um script em R e um z-score."
+        },
+        "credit": "Material propio · etapa en Udinese"
+      },
+      {
+        "src": "assets/figuras/tmg-outliers.png",
+        "after": 8,
+        "caption": {
+          "es": "Visualización en Tableau: distribución semanal del desplazamiento muscular durante la temporada, para detectar patrones de outliers por z-score.",
+          "en": "Tableau visualization: weekly distribution of muscle displacement across the season, to spot outlier patterns by z-score.",
+          "pt": "Visualização no Tableau: distribuição semanal do deslocamento muscular ao longo da temporada, para detectar padrões de outliers por z-score."
+        },
+        "credit": "Material propio · etapa en Udinese"
+      },
+      {
+        "src": "assets/figuras/viz-integrada.png",
+        "after": 9,
+        "caption": {
+          "es": "Visualización integrada: estado muscular, marcadores de recuperación y carga externa de una misma semana, juntos en un solo dashboard.",
+          "en": "Integrated visualization: muscle state, recovery markers and external load from a single week, together in one dashboard.",
+          "pt": "Visualização integrada: estado muscular, marcadores de recuperação e carga externa de uma mesma semana, juntos em um único dashboard."
+        },
+        "credit": "Material propio · etapa en Udinese"
+      }
+    ]
   },
   {
     "id": "united-pirlo",
