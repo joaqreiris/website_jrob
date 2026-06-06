@@ -807,3 +807,18 @@
   .cr-step { border-right: 0; border-bottom: 1px solid var(--line); }
   .cr-step:last-child { border-bottom: 0; }
 }
+
+/* Media de las cards de método (video vertical) */
+.method-media{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:8px;
+  object-fit:cover;
+}
+.method-media.is-vertical{
+  max-width:300px;
+  margin:0 auto;
+  aspect-ratio:9 / 16;
+  object-fit:cover;
+}
