@@ -808,27 +808,11 @@
   .cr-step:last-child { border-bottom: 0; }
 }
 
-/* Media de las cards de método (video vertical) */
+/* Media de las cards de método (video) */
 .method-media{
   width:100%;
-  height:auto;
-  display:block;
-  border-radius:8px;
-  object-fit:cover;
-}
-.method-media.is-vertical{
-  width:auto;
   height:100%;
-  max-height:520px;
-  margin-inline:auto;
   display:block;
   object-fit:cover;
   border-radius:8px;
-}
-/* contenedor del video — solo card COADYUVANTE (no afecta OPTIMIZADOR) */
-.ex-canvas--video{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:520px;
 }
