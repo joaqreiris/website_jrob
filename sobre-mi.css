@@ -5,7 +5,7 @@
 /* ============== HERO ============== */
 .about-hero.v2 {
   height: auto;
-  min-height: 100vh;
+  min-height: auto;
   margin-top: 0;
   padding: 0;
   background: var(--bg);
@@ -19,10 +19,10 @@
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 4rem;
-  align-items: end;
+  align-items: center;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 9rem 2rem 5rem;
+  padding: 7rem 2rem 3rem;
   width: 100%;
   flex: 1;
 }
@@ -63,6 +63,7 @@
 .about-hero-portrait {
   width: 100%;
   aspect-ratio: 4/5;
+  max-height: 560px;
   border-radius: var(--radius);
   overflow: hidden;
   position: relative;
@@ -76,7 +77,6 @@
 
 /* Stats band */
 .about-band {
-  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--bg-2);
   padding: 1.25rem 0;
