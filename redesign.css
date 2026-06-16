@@ -1119,7 +1119,7 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 blockquote::before {
-  content: "Tesis · 02";
+  content: "Filosofía";
   display: block;
   font-family: var(--font-mono);
   font-size: 0.72rem;
