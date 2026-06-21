@@ -418,6 +418,11 @@
 
 .endorsement[hidden] { display: none; }
 
+/* Numeración automática: solo cuenta las tarjetas visibles (no las [hidden]) */
+.endorsements-list { counter-reset: endorsement; }
+.endorsement:not([hidden]) { counter-increment: endorsement; }
+.endorsement-num::before { content: counter(endorsement, decimal-leading-zero); }
+
 .endorsement-num {
   font-family: var(--font-display);
   font-size: 2.4rem;
